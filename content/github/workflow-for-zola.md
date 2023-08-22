@@ -3,9 +3,13 @@ title = "Workflow for Zola"
 weight = 100
 +++
 
+# Workflow for Zola
+
 [zbrox/zola-deploy-action](https://github.com/marketplace/actions/zola-deploy)
 didn't work for me so I modified Github's default suggestion for a
 Hugo-based workflow to work for Zola.
+
+## yaml
 
 
 ``` yaml
