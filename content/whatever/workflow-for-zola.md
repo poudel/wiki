@@ -1,5 +1,5 @@
 +++
-title = "Workflow for Zola"
+title = "Zola GitHub Actions"
 weight = 100
 +++
 

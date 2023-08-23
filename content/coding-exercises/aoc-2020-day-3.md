@@ -1,0 +1,157 @@
++++
+title = "AoC 2020, Day 3"
+weight = 103
++++
+
+Day three challenge is a bit tricky. I can see the next one being more
+difficult, which is part of the fun.
+
+I looked at the challenge and immediately found myself reaching for
+Python shell. I'm not very familiar with the Clojure std lib for the
+repl to be useful as a means to write PoC.
+
+Since I'm trying to learn Clojure, the obvious choice would have been
+to try to solve this on the Clojure repl. But I couldn't help it.
+
+This also makes me wonder; is there a good quality "Clojure for Python
+Programmers" crash course type guide? Something to help me map the
+mappable concepts from Python to Clojure std lib.
+
+
+## Python solution {#python-solution}
+
+Here's what I came up with on the `ipython` shell.
+
+```python
+In [1]: forest = """
+   ...: ..##.........##.........##.........##.........##.........##.......
+   ...: #...#...#..#...#...#..#...#...#..#...#...#..#...#...#..#...#...#..
+   ...: .#....#..#..#....#..#..#....#..#..#....#..#..#....#..#..#....#..#.
+   ...: ..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#
+   ...: .#...##..#..#...##..#..#...##..#..#...##..#..#...##..#..#...##..#.
+   ...: ..#.##.......#.##.......#.##.......#.##.......#.##.......#.##.....
+   ...: .#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#
+   ...: .#........#.#........#.#........#.#........#.#........#.#........#
+   ...: #.##...#...#.##...#...#.##...#...#.##...#...#.##...#...#.##...#...
+   ...: #...##....##...##....##...##....##...##....##...##....##...##....#
+   ...: .#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#
+   ...: """.strip().split("\n")
+
+In [2]: def count_trees(jungle, down, right):
+   ...:     x, y = 0, 0
+   ...:     tree_count = 0
+   ...:     total_levels = len(jungle)
+   ...:     x_len = len(jungle[0])
+   ...:     while y < total_levels:
+   ...:         targetY = jungle[y]
+   ...:         char = targetY[x]
+   ...:
+   ...:         if char == "#":
+   ...:             tree_count += 1
+   ...:
+   ...:         y += down
+   ...:         x += right
+   ...:         if x >= x_len:
+   ...:             x = divmod(x, x_len)[1]
+   ...:     return tree_count
+   ...:
+
+In [3]: count_trees(forest, 1, 3)
+Out[3]: 7
+```
+
+It took several attempts to reach here. I also restarted `ipython`
+shell to make `In [1]` appear so as to give the impression that I
+solved it on my first try.
+
+The same function can be used to solve the second part of the challenge.
+
+```python
+In [4]: with open("resources/day3-input.txt") as fi:
+   ...:     jungle = list(filter(bool, map(str.strip, fi.readlines())))
+   ...:
+
+In [5]: import math
+
+In [6]: math.prod([count_trees(jungle, down, right) for right, down in
+                   [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]])
+Out[6]: 1744787392
+```
+
+Unlike my previous solutions, this one didn't need significant
+refactoring but it was a coincidence.
+
+The problem with this solution is that a "literal translation" to
+Clojure is going to look like a pile of vomit; if possible that is.
+This function not written in a functional way.
+
+
+## Clojure {#clojure}
+
+It took me until the weekend to get back to it again. I'm picking it
+up by implementing the day 3 solution in Clojure.
+
+Here's the final product.
+
+```clojure
+(ns advent-of-code.day3
+  (:gen-class)
+  (:use [clojure.string :only [split-lines]]))
+
+(defn read-input [] (split-lines (slurp  "./resources/day3-input.txt")))
+
+(defn traverse-x
+  [line x]
+  (if (< x 0)
+    nil
+    (get line (mod x (count line)))))
+
+(defn is-a-tree?
+  [lines x y]
+  (let [line (get lines y)
+        point-chr (if (nil? line) nil (traverse-x line x))]
+    (= point-chr \#)))
+
+(defn count-trees [[right down]]
+  (let [lines (read-input)
+        total-lines (count lines)]
+    (loop [x 0
+           y 0
+           treecount 0]
+
+      (if (> y total-lines)
+        ;; we've exhausted the tree line; return
+        treecount
+
+        ;; traverse and see there's a tree exists
+        (let [is-tree (is-a-tree? lines x y)
+              treecount (if is-tree (+ 1 treecount) treecount)
+              x (+ x right)
+              y (+ y down)]
+          (recur x y treecount))))))
+
+
+(defn part1 []
+  (count-trees [3 1]))
+
+(defn part2 []
+  (let [slopes [[1 1] [3 1] [5 1] [7 1] [1 2]]]
+    (reduce * (map count-trees slopes))))
+```
+
+I'm sure this can be improved a lot. I've never been comfortable with
+my understanding of loops/iterations in lisps. I hope to fix that with
+some practice in the coming days.
+
+I also learned that I could group test assertions together in one
+`deftest`. It makes perfect sense on hindsight but I'm a slow learner.
+
+```clojure
+(deftest test-solutions
+  (testing "test solutions"
+    (is (= (part1) 257))
+    (is (= (part2) 1744787392))))
+```
+
+I'm off to solving day 4. This time I'll try to skip solving in Python
+and try to do it on Clojure altogether.
