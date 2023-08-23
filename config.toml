@@ -1,7 +1,7 @@
 title = "Keshab's TIL"
 
 # The URL the site will be built for
-base_url = "https://keshab.net/til"
+base_url = "https://keshp.com"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
