@@ -1,3 +1,9 @@
++++
+title = "Upgrade Postgres"
+weight = 5
++++
+
+
 # Upgrading using pg_upgrade on MacOS
 
 I'm using Postgres.app and I'm  not sure what's the easiest way for that is. After some trial and error,
@@ -132,3 +138,9 @@ Running this script will delete the old cluster's data files:
 ```
 
 I took the advice given and also ran the `vacuumdb` command. It wasn't necessary but still.
+
+## Extensions
+
+`pg_upgrade` creates `update_extensions.sql` file if it finds any extension. Just run the commands.
+
+Also, run `./delete_old_cluster.sh` after ensuring that the new cluster is working well.
