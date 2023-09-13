@@ -1,6 +1,6 @@
 +++
 title = "Generic scraper"
-weight = 10
+weight = 500
 +++
 
 # Generic scraper

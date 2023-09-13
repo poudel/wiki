@@ -50,6 +50,12 @@ Wonderful(
 )
 ```
 
+However, I get this error when trying to use this
+
+```
+It is redundant to specify `source='...'` on field 'DateField' in serializer '...', because it is the same as the field name. Remove the `source` keyword argument.
+```
+
 
 # Links
 
