@@ -50,3 +50,8 @@ Wonderful(
 )
 ```
 
+
+# Links
+
+1. [DRF: Advanced serializer usage — Dynamically modifying fields](https://joel-hanson.medium.com/advanced-serializer-usage-dynamically-modifying-fields-e7c3bc28efa6)
+2. [Python Metaclasses](https://realpython.com/python-metaclasses/)
