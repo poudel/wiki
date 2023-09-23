@@ -19,8 +19,6 @@ that there's another process that's consuming these records. I'm interested in t
 But this gist, [Building blocks for generic history-keeping in Postgres](https://gist.github.com/slotrans/353952c4f383596e6fe8777db5d098f0) has a much better example and implementation. It also suggests that
 you should keep separate history table for each tables. I happen to agree with that.
 
-<script src="https://gist.github.com/slotrans/353952c4f383596e6fe8777db5d098f0.js"></script>
-
 ## pgaudit
 
 I'd never heard of [pgaudit](https://github.com/pgaudit/pgaudit/tree/master) before, but it 
