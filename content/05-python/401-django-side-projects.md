@@ -1,5 +1,5 @@
 +++
-title = "Django side projects"
+title = "Starting side projects with Django"
 weight = 401
 date = 2023-10-01
 +++
@@ -39,3 +39,15 @@ GRANT ALL PRIVILEGES ON DATABASE <db_name> TO <db_name>;
 
 creates a new user/role with the same name and grants all permissions
 on that database.
+
+## Error while installing psycopg2
+
+I forgot to put postgresapp on the path the first time. Which made it
+throw an error when installing `psycopg2`. Following was taken from
+[postgresapp.com](https://postgresapp.com/).
+
+
+```shell
+sudo mkdir -p /etc/paths.d &&
+echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
+```
