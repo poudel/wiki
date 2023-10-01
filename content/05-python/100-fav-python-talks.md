@@ -3,8 +3,6 @@ title = "Favorite Python Talks"
 weight = 5
 +++
 
-# Favorite Python Talks
-
 This is my ever-growing list of favorite python talks, in no particular
 order.
 

@@ -3,8 +3,6 @@ title = "Protohackers"
 weight = 10
 +++
 
-# Protohackers 
-
 [Protohackers](https://protohackers.com/) has some server programming
 challenges. I'm still working my way through it. It has been quite the
 experience, learning low level networking and also the rust

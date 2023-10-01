@@ -3,8 +3,6 @@ title = "Emacs Plus"
 weight = 10
 +++
 
-# Emacs Plus
-
 If you're using Emacs on MacOS, chances are you're using the one from
 Emacs-For-Mac-OSX website. This makes getting it so easy because there
 are no official binaries available for mac and you can be sure that

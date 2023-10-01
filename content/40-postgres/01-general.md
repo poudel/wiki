@@ -1,7 +1,8 @@
 +++
-title = "General"
+title = "Misc Postgres"
 weight = 1
 +++
+
 
 ## Install extension
 

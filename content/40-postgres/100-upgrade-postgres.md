@@ -3,13 +3,12 @@ title = "Upgrade Postgres"
 weight = 100
 +++
 
-
-# Upgrading using pg_upgrade on MacOS
+## Upgrading using pg_upgrade on MacOS
 
 I'm using Postgres.app and I'm  not sure what's the easiest way for that is. After some trial and error,
 this is what worked for me. I'm upgrading from 11 to 14.
 
-## Initialise the new database
+### Initialise the new database
 
 Shut the old server down and create a new server from Postgres.app's sidebar.
 
@@ -23,7 +22,7 @@ Instead, run the following command
 Run the `initdb` directly from the command line with these options. Keep in mind that if your old database was initialised with other options, they should be copied here as well.
 In my case, this is the documented incantation in the Postgres app's readme. Don't run the new server yet.
 
-## Upgrade
+### Upgrade
 
 Run the following command to check if everything's alright and potential upgrade is possible
 

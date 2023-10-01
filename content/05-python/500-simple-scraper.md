@@ -1,9 +1,7 @@
 +++
-title = "Generic scraper"
+title = "Generic scraper in Python"
 weight = 500
 +++
-
-# Generic scraper
 
 I needed a way to scrap lists from several websites. The challenge is
 that each site has its own unique HTML to present the list.

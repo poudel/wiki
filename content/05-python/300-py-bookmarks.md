@@ -1,9 +1,7 @@
 +++
-title = "Bookmarks"
+title = "Python Bookmarks"
 weight = 300
 +++
-
-# Python Bookmarks
 
 Just some interesting things that I want to explore. Not supposed to be exhaustive. 
 

@@ -3,8 +3,6 @@ title = "Dynamic serializers in DRF"
 weight = 400
 +++
 
-# Dynamic serializers
-
 Normally, you define serializers as classes. Something like this:
 
 ```python
