@@ -12,6 +12,11 @@ the excellent `cookiecutter-django` starter template, which takes care
 of many things. However, I find `cookiecutter-django` to be quite
 overkill sometimes.
 
+I've also recently discovered
+[sidewinder](https://stribny.github.io/sidewinder/), another starter
+template. This is another interesting option for me. It is slightly
+more 'minimal' compared to `cookiecutter-django`.
+
 ## Setting up postgresql
 
 I use the excellent [Postgres.app](https://postgresapp.com/) on MacOS.
