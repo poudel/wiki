@@ -37,3 +37,51 @@ class KSUIDField(CharField):
         return name, path, args, kwargs
 ```
 
+And a little more complicated setup with a base model class that has a prefixed ksuid as the primary key.
+
+```python
+from django.db import models
+
+class KSUIDPrimaryKeyField(KSUIDField):
+    __prefix_registry = {}
+
+    def __init__(self, *args, **kwargs):
+        kwargs["primary_key"] = True
+        kwargs["unique"] = True
+        super().__init__(*args, **kwargs)
+
+    def contribute_to_class(self, cls, name, private_only=False):
+        super().contribute_to_class(cls, name, private_only=private_only)
+
+        try:
+            prefix = getattr(cls, "id_prefix")
+            if not prefix.endswith("_"):
+                prefix = f"{prefix}_"
+
+            self.prefix = prefix
+
+            if self.prefix in self.__prefix_registry and cls != self.__prefix_registry[self.prefix]:
+                raise ImproperlyConfigured(
+                    f"Duplicate id_prefix for {cls} and {self.__prefix_registry[self.prefix]}"
+                )
+
+            self.__prefix_registry[self.prefix] = cls
+        except AttributeError:
+            if not cls._meta.abstract:
+                raise ImproperlyConfigured(f"id_prefix missing from model definition: {cls}")
+
+
+class BaseModel(models.Model):
+    idx = KSUIDPrimaryKeyField()
+
+    class Meta:
+        abstract = True
+```
+
+Now I just inherit the `BaseModel` and specify an `id_prefix`. Like this:
+
+```python
+class Something(BaseModel):
+    id_prefix = "sth"
+    name = models.CharField(max_length=100)
+```
