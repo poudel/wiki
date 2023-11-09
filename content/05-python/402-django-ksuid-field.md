@@ -8,19 +8,15 @@ Essentially a copy of [shortuuid/django_fields](https://raw.githubusercontent.co
 
 ```python
 import ksuid
-from django.db.models import CharField
+from django.db.models import TextField
 from django.utils.translation import gettext_lazy as _
 
 
-class KSUIDField(CharField):
+class KSUIDField(TextField):
     description = _("KSUID field with optional prefix")
 
     def __init__(self, *args, **kwargs):
         self.prefix = kwargs.pop("prefix", "")
-        base62_length = 27
-
-        if "max_length" not in kwargs:
-            kwargs["max_length"] = base62_length + len(self.prefix)
 
         if "editable" not in kwargs:
             kwargs["editable"] = False
