@@ -1,5 +1,5 @@
 +++
-title = "dwim-shell-commands"
+title = "Using dwim-shell-command"
 weight = 200
 +++
 
@@ -84,3 +84,9 @@ with open(filename, 'w') as f:
      :shell-args "-c"
      :silent-success t))
 ```
+
+# Links
+
+* [Emacs DWIM shell-command](https://xenodium.com/emacs-dwim-shell-command/)
+* [Commands with template prompts](https://xenodium.com/dwim-shell-command-with-template-prompts/)
+* [dwim-shell-command video streams](https://xenodium.com/dwim-shell-command-video-streams/)
