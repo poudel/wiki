@@ -1,6 +1,6 @@
 +++
 title = "Zola GitHub Actions"
-weight = 100
+weight = 300
 +++
 
 [zbrox/zola-deploy-action](https://github.com/marketplace/actions/zola-deploy)

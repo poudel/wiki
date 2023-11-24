@@ -83,13 +83,13 @@ gpg --edit-key <key-id-long-very-long>
 
 In the interactive gpg shell, enter `addkey` command.
 
-```text
+```txt
 addkey
 ```
 
 You'll see:
 
-```text
+```txt
 Please select what kind of key you want:
    (3) DSA (sign only)
    (4) RSA (sign only)
@@ -160,7 +160,7 @@ gpg --edit-key <email/key-id>
 
 Then in the interactive shell, type `trust` command.
 
-```text
+```txt
 Command> trust
 ```
 
@@ -172,7 +172,7 @@ You'll be prompted to select how far you want to trust the key.
 Add following in `~/.gnupg/gpg-agent.conf` to use Emacs for pinentry
 and not the external dialogue.
 
-```text
+```txt
 allow-emacs-pinentry
 allow-loopback-pinentry
 ```
@@ -264,20 +264,20 @@ gpg --armor --export <KEY-ID>
 key wasn't expired though, which I verified by running the key listing
 command.
 
-```text
+```txt
 error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
 
 I tried committing with GIT_TRACE=1 environment variable.
 
-```shell
+```sh
 GIT_TRACE=1 git commit
 ```
 
 Which printed the failing `gpg` command.
 
-```text
+```txt
 gpg --status-fd=2 -bsau <key-id>
 ```
 
@@ -285,11 +285,27 @@ Running this command didn't throw any error though.
 
 I'd just logged out and logged in onto the machine, maybe that broke something? I then killed gpg-agent on a whim.
 
-```shell
+```sh
 gpgconf --kill gpg-agent
 ```
 
 Now it's working. Not sure what was up.
+
+
+2023-11-24 Saving .gpg files would hang in Emacs. Found [this
+question](https://stackoverflow.com/q/76388376) in stackoverflow that
+suggests downgrading the `gpg` package.
+
+```sh
+brew uninstall --ignore-dependencies gpg
+```
+
+and then 
+
+```sh
+brew install gnupg@2.2
+```
+
 
 
 ## Links {#links}

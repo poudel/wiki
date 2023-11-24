@@ -34,7 +34,7 @@ This `--check` flag ensures a dry run and will flag any error that might come up
 
 Without the `-U postgres` flag, pg_upgrade seems to pick th `$USER` by default, and I received the following message
 
-```text
+```txt
 -----------------------------
 Checking cluster versions                                   ok
 Checking database user is the install user                  
@@ -46,7 +46,7 @@ Passing an explicit `-U postgres` as the upgrade user shut that down.
 
 Also, I recieved following error when the first time when I'd initialised the database from the Postgres.app.
 
-```text
+```txt
 Performing Consistency Checks
 -----------------------------
 Checking cluster versions                                   ok
@@ -69,7 +69,7 @@ Failure, exiting
 It was clear after I ran `SELECT rolname,oid FROM pg_roles;` that the app created a role for `$USER` as well and `pg_upgrade` didn't like that. With those errors out of the way,
 I ran the above command sans `--check` and received following.
 
-```text
+```txt
 Performing Consistency Checks
 -----------------------------
 Checking cluster versions                                   ok

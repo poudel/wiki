@@ -9,14 +9,14 @@ date = 2023-10-01
 
 See all installed and available versions
 
-```shell
+```sh
 pyenv versions
 ```
 
 
 To list all installation options that are available to us.
 
-```shell
+```sh
 pyenv install -l | grep \ \ 3
 ```
 
@@ -26,14 +26,14 @@ on each line, hence the escaped spaces `\ \ `.
 
 To install a version, just run
 
-```shell
+```sh
 pyenv install <full-version>
 ```
 
 
 To set the local python version for the current directory, run:
 
-```shell
+```sh
 pyenv local 3.11.1
 ```
 

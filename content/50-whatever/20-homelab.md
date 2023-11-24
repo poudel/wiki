@@ -53,7 +53,7 @@ EDITOR=vim visudo
 Scroll down to the bottom of the file and grant all permissions to
 this guy:
 
-```text
+```txt
 john ALL=(ALL:ALL) ALL
 ```
 
@@ -82,7 +82,7 @@ vim /etc/systemd/logind.conf
 Find the `HandleLidSwitch` event handler and set the action
 to `ignore`.
 
-```text
+```txt
 HandleLidSwitch=ignore
 ```
 

@@ -52,7 +52,7 @@ throw an error when installing `psycopg2`. Following was taken from
 [postgresapp.com](https://postgresapp.com/).
 
 
-```shell
+```sh
 sudo mkdir -p /etc/paths.d &&
 echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
 ```
