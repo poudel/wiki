@@ -1,13 +1,20 @@
 +++
-title = "Zola GitHub Actions"
+title = "This website"
 weight = 300
 +++
+
+The current iteration of this project is a collection of markdown
+files built into a static website using zola. I'm using the [zola
+easydocs theme](https://github.com/poudel/zola_easydocs_theme/) with
+some modifications.
+
+
+## Github action
+
 
 [zbrox/zola-deploy-action](https://github.com/marketplace/actions/zola-deploy)
 didn't work for me so I modified Github's default suggestion for a
 Hugo-based workflow to work for Zola.
-
-## yaml
 
 
 ``` yaml

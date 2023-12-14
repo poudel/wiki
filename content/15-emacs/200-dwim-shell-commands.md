@@ -1,5 +1,5 @@
 +++
-title = "Using dwim-shell-command"
+title = "DWIM shell command"
 weight = 200
 +++
 
