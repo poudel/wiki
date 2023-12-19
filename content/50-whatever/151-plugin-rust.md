@@ -22,6 +22,6 @@ options, namely Webassembly.
 
 ## Links
 
-
 * [Scotch](https://github.com/ItsEthra/scotch) (WASM plugin system)
-
+* [alec-deason/wasm_plugin](https://github.com/alec-deason/wasm_plugin/)
+* [feather-rs/feather/../example-plugins](https://github.com/feather-rs/feather/tree/main/quill/example-plugins)
