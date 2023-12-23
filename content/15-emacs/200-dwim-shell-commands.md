@@ -5,9 +5,9 @@ weight = 200
 
 Excellent package to wrap repetitive shell commands into interactive commands.
 
-# Commands
+## Commands
 
-## csv to datasette
+{% folded(title="csv to datasette") %}
 
 I keep having to interact with csv files and using datasette to explore the 
 data would really be helpful sometimes.
@@ -48,7 +48,9 @@ I can reduce this down to just one command like this
 Here, `:focus-now t` just means that the `dwim-shell-command` buffer is brought into focus
 so that we can see the output immediately.
 
-# csv to json
+{% end %}
+
+{% folded(title="csv to json") %}
 
 ```lisp
 (defun kes-dwim-shell-command-csv-to-json ()
@@ -85,7 +87,64 @@ with open(filename, 'w') as f:
      :silent-success t))
 ```
 
-# Links
+{% end %}
+
+## Using transient
+
+I got inspired by Charles Choi's post about [using transient with
+isearch](http://yummymelon.com/devnull/improving-emacs-isearch-usability-with-transient.html)
+so following is what I did.
+
+{% folded(title="kes-dired-transient") %}
+```el
+(require 'transient)
+
+(transient-define-prefix kes-dired-transient ()
+  "dired menu"
+
+  [["CSV files"
+   ("cj"
+    "Convert csv to json"
+    kes-dwim-shell-command-csv-to-json
+    :transient nil)
+
+   ("cs"
+    "CSV to sqlite"
+    kes-dwim-shell-command-csv-to-sqlite
+    :transient nil)
+
+   ("cd"
+     "CSV to Datasette"
+     kes-dwim-shell-command-csv-to-datasette
+     :transient nil)
+   ]
+
+   ["JSON files"
+    ("jd"
+     "JSON to Datasette"
+     kes-dwim-shell-command-json-to-datasette
+     :transient nil)]
+
+   ["Misc"
+    ("fc"
+     "Fold certificate"
+     kes-dwim-shell-command-fold-cert
+     :transient nil)
+
+    ("od"
+     "Open datasette"
+     kes-dwim-shell-command-open-datasette
+     :transient nil)
+
+    ]])
+
+(define-key dired-mode-map (kbd "C-c d") 'kes-dired-transient)
+```
+{% end %}
+
+I'm sure I'll be adding more commands to this.
+
+## Links
 
 * [Emacs DWIM shell-command](https://xenodium.com/emacs-dwim-shell-command/)
 * [Commands with template prompts](https://xenodium.com/dwim-shell-command-with-template-prompts/)
