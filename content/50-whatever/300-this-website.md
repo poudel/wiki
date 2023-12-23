@@ -9,6 +9,34 @@ easydocs theme](https://github.com/poudel/zola_easydocs_theme/) with
 some modifications.
 
 
+## Folded code blocks
+
+I have a habit of including code snippets and outputs of commands in
+my notes. Sometimes they can get quite long and make for a longer
+scrolling. The solution was quite easy: a shortcode that can be used
+to wrap the snippet inside a `<summary>` tag.
+
+Saved the following inside `templates/shortcodes/folded.md`.
+
+```html
+<details>
+    <summary>{{ title }}</summary>
+    {{ body | markdown }}
+</details>
+```
+
+Now I can simply use this as follows
+
+```txt
+{%/* folded(title="csv to datasette") */%}
+<folded-content-goes-here>
+{%/* end */%}
+```
+
+One added bonus is that I can fold any markdown content, not just code
+blocks.
+
+
 ## Github action
 
 
@@ -16,7 +44,7 @@ some modifications.
 didn't work for me so I modified Github's default suggestion for a
 Hugo-based workflow to work for Zola.
 
-
+{% folded(title="build.yml") %}
 ``` yaml
 name: Deploy to Pages
 
@@ -83,6 +111,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
 ```
+{% end %}
 
 In summary, this builds the page, uploads the output `./public`
 directory as an artifact and then deploys it using the
