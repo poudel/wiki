@@ -2,6 +2,7 @@
 title = "Exploring data on the shell"
 weight = 20
 date = 2024-01-09
+draft = true
 +++
 
 
@@ -44,4 +45,17 @@ In [1]: a.append(3)
 In [2]: exit
 
 [1, 2, 3]
+```
+
+# Paging
+
+Another thing I really miss is the pager. 
+
+# Progress report
+
+Usually iterating through
+
+```python
+a = f"{idx}".zfill(5)
+print(f"Done: {a}/35000", end="\r")
 ```
