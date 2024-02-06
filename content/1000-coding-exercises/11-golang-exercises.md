@@ -33,3 +33,4 @@ Initial version has a websocket handler that wrote the current time every
 second to the client. I started replaced that with currently available RAM using
 [gopsutil](github.com/shirou/gopsutil/v3).
 
+The package is [here](https://github.com/poudel/go-omnibus/tree/main/systeminfo).
