@@ -8,6 +8,7 @@ draft = true
 Today I encountered the strangest issue for the first time. 
 
 ```python
+import requests
 requests.packages.urllib3.util.connection.HAS_IPV6 = False
 ```
 
