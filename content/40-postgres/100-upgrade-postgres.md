@@ -143,3 +143,15 @@ I took the advice given and also ran the `vacuumdb` command. It wasn't necessary
 `pg_upgrade` creates `update_extensions.sql` file if it finds any extension. Just run the commands.
 
 Also, run `./delete_old_cluster.sh` after ensuring that the new cluster is working well.
+
+## Update the $PATH
+
+Had a problem because I was inadvertently pointing to Pg 11 instead of 14.
+
+```
+sudo mkdir -p /etc/paths.d &&
+echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
+```
+
+Copied from <https://postgresapp.com/documentation/cli-tools.html>
+
