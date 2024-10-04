@@ -1,6 +1,7 @@
 +++
-title = "Quest for personal document management"
+title = "Document management"
 date = 2023-03-26
+description = "My quest to finding a document management solution"
 +++
 
 Living in Germany you tend to collect a lot of paper. I mean physical,
