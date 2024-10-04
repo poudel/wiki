@@ -1,7 +1,7 @@
 +++
 title = "Go unique package"
 weight = 10
-date = "2024-10-04"
+date = 2024-10-04
 tags = ["go", "pl"]
 +++
 
@@ -12,7 +12,7 @@ If you didn't know about VictoriaMetrics, here's what Phuong says about themselv
 
 >If you want to monitor your services, track metrics, and see how everything performs, you might want to check out VictoriaMetrics. It’s a fast, open-source, and cost-saving way to keep an eye on your infrastructure.
 
-This is also the first time I heard the term string interning. I was aware of the behaviour in python. Once I discovered
+This is also the first time I heard the term [string interning](https://en.wikipedia.org/wiki/String_interning). I was aware of the behaviour in python. Once I discovered
 that python kept a global cache of certain numbers to save memory. But I didn't know what it was called.
 
 This is what I mean. 
