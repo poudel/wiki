@@ -1,7 +1,7 @@
 +++
 title = "Experiments with git-subtree"
 date = 2022-08-14
-tags = ["blog", "git", "emacs", "dotfiles"]
+tags = ["git", "emacs"]
 +++
 
 I'm learning the Rust language these days. I like making real things
@@ -157,7 +157,7 @@ First we configure  `org-publish-project` by setting
     :html-doctype "html5"
 
     :auto-sitemap t
-    :sitemap-title "keshab paudel's blog"
+    :sitemap-title "blog"
     :sitemap-filename "index.org"
     :sitemap-style list
     :sitemap-sort-files anti-chronologically
