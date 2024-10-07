@@ -4,7 +4,7 @@ date = 2024-10-07
 tags = ["emacs", "til", "git"]
 +++
 
-I came across the `magit-find-file` function today. The doc string says:
+I came across the `magit-find-file` function today[^1]. The doc string says:
 
 >View FILE from REV.
 >Switch to a buffer visiting blob REV:FILE, creating one if none
@@ -32,3 +32,6 @@ Additionally, there also exist the usual companion "find file" functions:
 
 I've not decided on a key binding but it'll probably be something under
 the projectile keymap.
+
+
+[^1] <https://www.reddit.com/r/emacs/comments/1fxol2u/working_with_multiple_branches_using_magit/>

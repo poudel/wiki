@@ -1,6 +1,5 @@
 +++
 title = "Go unique package"
-weight = 10
 date = 2024-10-04
 tags = ["go", "pl"]
 +++
