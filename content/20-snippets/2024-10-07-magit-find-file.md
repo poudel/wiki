@@ -4,7 +4,7 @@ date = 2024-10-07
 tags = ["emacs", "til", "git"]
 +++
 
-I just learned about the `magit-find-file` function. The doc string says
+I came across the `magit-find-file` function today. The doc string says:
 
 >View FILE from REV.
 >Switch to a buffer visiting blob REV:FILE, creating one if none
@@ -16,7 +16,14 @@ Up until now, I was always switching branches whenever I needed to peek
 into a file that hadn't been merged yet. This is gonna make it quicker 
 and easier to do that.
 
-I have yet to make a switch to worktree, this will do in the meantime.
+For example, to visit a file on a branch:
+
+1. invoke `magit-find-file` in a repo
+2. select the branch from the completion list
+3. select the file
+
+This works with remote branches too, which is great because github's PR
+UI is a mess when there are many comments.
 
 Additionally, there also exist the usual companion "find file" functions:
 
