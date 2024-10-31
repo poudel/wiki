@@ -10,7 +10,7 @@ used KDE.
 But after enduring the default macos window manager, and flirting with
 many different tiling window managers over the last 4 years, I've
 finally found something that I might actually stick to:
-[aerospace](https://nikitabobko.github.io/AeroSpace).
+[aerospace](https://github.com/nikitabobko/AeroSpace).
 
 Aerospace's killer feature is the virtual workspace that it comes
 with. It's worth switching just for that.
