@@ -49,6 +49,7 @@ This is my config right now, but I'm sure it'll go through a few
 transformations. I want to have a setup ready when I open my laptop so
 I'm gonna add a few things to the `after-startup-command` list.
 
+{% folded(title=".aerospace.toml") %}
 ```toml
 # Place a copy of this config to ~/.aerospace.toml
 # After that, you can edit ~/.aerospace.toml to your liking
@@ -211,6 +212,7 @@ alt-cmd-ctrl-k = ['join-with down', 'mode main']
 alt-cmd-ctrl-i = ['join-with up', 'mode main']
 alt-cmd-ctrl-l = ['join-with right', 'mode main']
 ```
+{% end %}
 
 # Links
 
