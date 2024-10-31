@@ -211,3 +211,7 @@ alt-cmd-ctrl-k = ['join-with down', 'mode main']
 alt-cmd-ctrl-i = ['join-with up', 'mode main']
 alt-cmd-ctrl-l = ['join-with right', 'mode main']
 ```
+
+# Links
+
+* This video was really helpful <https://www.youtube.com/watch?v=-FoWClVHG5g>
