@@ -39,7 +39,7 @@ brew tap d12frosted/emacs-plus
 Then run:
 
 ```sh
-brew install emacs-plus@30 --with-no-frame-refocus --with-imagemagick --with-xwidgets
+brew install emacs-plus@30 --with-no-frame-refocus --with-imagemagick --with-xwidgets --with-native-comp
 ```
 
 This will download and build emacs from source so it can take a while.
