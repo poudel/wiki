@@ -320,3 +320,4 @@ undo-tree.
 * more dired-hacks, (currently I'm using `diredfl` only)
 * try [verb](https://github.com/federicotdn/verb) to replace `restclient.el`
 * spell checking setup
+* compile command <https://www.reddit.com/r/emacs/comments/1h2o8hr/share_your_mx_compile_compilationmode_config/>
