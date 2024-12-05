@@ -144,6 +144,8 @@ doing this right. For now, this gets removed.
 
 I'll probably revert this back. 
 
+Update: Yes, reverted it back.
+
 ## remove forge (magit)
 
 Not using this.
