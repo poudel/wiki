@@ -240,6 +240,23 @@ I'm not using org to publish html these days so this is not necessary
   (setq org-html-htmlize-output-type 'css))
 ```
 
+## Remove semantic
+
+When editing certain files, every pause triggered a garbage collection. It only
+happened in certain buffers once in a while. After going through every
+minor modes on that buffer, I found the culprit to be `semantic-idle-scheduler-mode`. 
+
+But I will switch off semantic mode instead of configuring this minor mode because 
+I don't really need it. I don't know why I enabled it in the first place.
+
+```lisp
+(semantic-mode t)
+```
+
+By turning it off, I may have solved an older issue where every single keystroke
+would take about half a second. 
+
+
 ## Spell checking
 
 I've not bothered to set this up properly. Needs revisiting.
