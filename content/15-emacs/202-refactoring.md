@@ -276,6 +276,21 @@ I've not bothered to set this up properly. Needs revisiting.
   (flyspell-mode))
 ```
 
+## Remove undo-tree
+
+Using `vundo` now.
+
+```lisp
+(use-package undo-tree
+  :defer t
+  :init (global-undo-tree-mode)
+  :custom
+  (undo-tree-auto-save-history nil)
+  (undo-tree-visualizer-diff t)
+  (undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
+  (undo-tree-visualizer-timestamps t))
+```
+
 # For later
 
 While going through my config, I came across many other packages
@@ -327,6 +342,7 @@ also
 Although I don't remember the last time I've had a problem with
 undo-tree.
 
+Update: switched to `vundo`
 
 
 ## the rest
