@@ -5,6 +5,11 @@ weight = 400
 
 # Links
 
+## Cafes
+
+* <https://www.reddit.com/r/berlinsocialclub/comments/1hjxtj2/coffee_shops_for_laptop_work_in_berlin/>
+* <https://maps.app.goo.gl/Kqo8c8RtG8qZedTs8>
+
 ## Moving
 
 * <https://truckandman.com/germany.html> - Moving across Europe
