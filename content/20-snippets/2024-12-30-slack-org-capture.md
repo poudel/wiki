@@ -1,6 +1,6 @@
 +++
 title = "org slack messages"
-date = 2024-12-18
+date = 2024-12-30
 description = "Srijan Choudhary's convenient workflow from slack to org"
 tags = ["emacs"]
 +++
