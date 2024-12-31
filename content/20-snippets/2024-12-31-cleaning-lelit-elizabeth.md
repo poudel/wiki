@@ -5,7 +5,7 @@ description = "how I backflush my lelit elizabeth"
 tags = ["coffee", "espresso"]
 +++
 
-## Backflush
+# Backflush
 
 1. Place some coffee machine detergent in a blind portafilter
 2. Press Button 1 and Button 2 together. This will do a quick backflush and stop.
@@ -19,3 +19,10 @@ Side note: I have to press B1 & B2 in a rapid succession to get this
 activated, pressing it together at the same time doesn’t work.
 8. Repeat step 7 depending on how far back the last backflush was
 
+# Links
+
+1. [Video by Dave Corbey](https://www.youtube.com/watch?v=6NPqzWEebUQ)
+2. [Hybrid backflushing by Dave
+   Corbey](https://www.youtube.com/watch?v=nylMUhHBTyA) seems to be
+   exactly what I'm doing here as well
+3. <https://www.reddit.com/r/espresso/comments/ztuzey/suggestions_on_how_to_clean_maintain_lelit/>
