@@ -41,10 +41,8 @@ like Log4j, but has no java specific requirement as long as the logs
 follow similar format. I didn't try it myself but this seems useful
 if you're in need of a proper log viewer.
 
-+
-
 ## Links
 
-1. [^1]: https://www.reddit.com/r/emacs/comments/1if44u0/using_emacs_to_tail_logs/
-2. [^3]: TIL, I only knew about auto-revert-mode
-3. [^2]: https://github.com/doublep/logview
+[^1]: https://www.reddit.com/r/emacs/comments/1if44u0/using_emacs_to_tail_logs/
+[^2]: TIL, I only knew about auto-revert-mode
+[^3]: https://github.com/doublep/logview
