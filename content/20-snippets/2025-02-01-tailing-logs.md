@@ -4,7 +4,7 @@ date = 2025-02-01
 tags = ["emacs"]
 +++
 
-I came across /u/asboans asking[^fn:1] for tips on following logs in Emacs.
+I came across /u/asboans asking[^1] for tips on following logs in Emacs.
 And it occurred to me that I don't tail logs that often these days.
 This is due to using tools like Sentry, and Datadog at $work. 
 
@@ -22,7 +22,7 @@ and tail the log like this.
 tail ../path/to/logs/*.log
 ```
 
-A commenter suggests using `auto-revert-tail-mode`[^fn:2] which is
+A commenter suggests using `auto-revert-tail-mode`[^2] which is
 apparently similar to auto-revert-mode. This is built in and a
 preferable one for me to try.
 
@@ -35,7 +35,7 @@ One thing to note is that the buffers are like any other emacs buffers
 so the regular cautions with opening large files in emacs still
 applies.
 
-Another user recommended using the logview[^fn:3] package. Looks very
+Another user recommended using the logview[^3] package. Looks very
 featureful. Originally designed to target log files by java programs
 like Log4j, but has no java specific requirement as long as the logs
 follow similar format. I didn't try it myself but this seems useful
@@ -45,6 +45,6 @@ if you're in need of a proper log viewer.
 
 ## Links
 
-1. [^fn:1] https://www.reddit.com/r/emacs/comments/1if44u0/using_emacs_to_tail_logs/
-2. [^fn:3] TIL, I only knew about auto-revert-mode
-3. [^fn:2] https://github.com/doublep/logview
+1. [^1]: https://www.reddit.com/r/emacs/comments/1if44u0/using_emacs_to_tail_logs/
+2. [^3]: TIL, I only knew about auto-revert-mode
+3. [^2]: https://github.com/doublep/logview
