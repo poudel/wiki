@@ -39,80 +39,49 @@ blocks.
 
 ## Github action
 
-
-[zbrox/zola-deploy-action](https://github.com/marketplace/actions/zola-deploy)
-didn't work for me so I modified Github's default suggestion for a
-Hugo-based workflow to work for Zola.
+On 2025-02-01, my build failed because I was using an older version of
+an action. Used that ocassion to replace the old multi step workflow
+with a simplified one using the `shalzz/zola-deploy-action` action.
 
 {% folded(title="build.yml") %}
 ``` yaml
 name: Deploy to Pages
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+on: 
+ push:
+  branches:
+   - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Cancel running workflow in favor of new ones.
 concurrency:
   group: "pages"
-  cancel-in-progress: false
-
-# Default to bash
-defaults:
-  run:
-    shell: bash
+  cancel-in-progress: true
 
 jobs:
-  # Build job
   build:
+    name: Publish site
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.114.0
     steps:
-      - name: Install Zola
-        uses: taiki-e/install-action@v2
-        with:
-          tool: zola@0.17.1
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
+    - name: Checkout main
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
 
-      - name: Build with Zola
-        run: zola build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./public
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+    - name: Build and deploy
+      uses: shalzz/zola-deploy-action@v0.19.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 {% end %}
 
-In summary, this builds the page, uploads the output `./public`
-directory as an artifact and then deploys it using the
-`actions/deploy-pages` action.
+In summary, this builds the page and pushes it to the `gh-pages`
+branch which triggers a page deployment. I had to set the page to be
+deployed from that branch instead of main in the settings and also add
+write permission to the github token.
+
+Previously, I had a workflow that pushed the built artifact and used
+`actions/deploy-pages`. This is much simpler.
