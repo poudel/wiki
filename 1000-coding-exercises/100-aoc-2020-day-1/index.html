@@ -1,0 +1,480 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://keshp.com/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> thoughts in progress | AoC 2020, Day 1 </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <h1><a href="https:&#x2F;&#x2F;keshp.com">thoughts in progress</a></h1>
+            <div>
+                <small>it&#x27;s not even a proper wiki</small>
+            </div>
+            <br>
+
+            <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                <input class="tree-toggle" type="checkbox" id="python"
+                           />
+                    <label class="tree-toggle-label"
+                           for="python">Python</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/05-python/100-fav-python-talks/">Favorite Python Talks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/10-py-environments/">Python environments</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/300-py-bookmarks/">Python Bookmarks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/400-dynamic-serializers-drf/">Dynamic serializers in DRF</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/401-django-side-projects/">Starting side projects with Django</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/402-django-ksuid-field/">Django KSUID field</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/500-simple-scraper/">Generic scraper in Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/501-httpserver/">HTTP Server</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/700-click/">Click</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="emacs"
+                           />
+                    <label class="tree-toggle-label"
+                           for="emacs">Emacs</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/15-emacs/10-using-emacs-plus/">Emacs Plus</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/200-dwim-shell-commands/">DWIM shell command</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/201-magit-forge/">Magit Forge</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/202-refactoring/">Config refactoring</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="snippets"
+                           />
+                    <label class="tree-toggle-label"
+                           for="snippets">Snippets</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/20-snippets/new-entry-helper/">Automating creating new entries</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/tailing-logs/">tailing logs</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/inkpalm/">InkPalm 5 mini e-reader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/cleaning-lelit-elizabeth/">Cleaning Lelit Elizabeth</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/slack-org-capture/">org slack messages</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/files-are-mess/">dorotac on filesystems</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/dms-again/">Document management, again</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/pycharm-docker-interpreter/">Pycharm not finding Docker interpreter</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/magit-find-file/">magit-find-file</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/go-unique-package/">Go unique package</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/quest-document-management/">Document management</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/thinkpad-homelab/">ThinkPad T470 for Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/discovering-hyperbole/">Discovering Hyperbole</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/using-minions-el/">Replacing rich-minority with minions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/emacs-for-python/">Back to using Emacs for Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/everything-inside-dotfiles/">Keeping everything inside ~&#x2F;dotfiles directory</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/linux-laptop/">Linux laptop to play with</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/git-subtree-experiments/">Experiments with git-subtree</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="postgresql"
+                           />
+                    <label class="tree-toggle-label"
+                           for="postgresql">PostgreSQL</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/40-postgres/01-general/">Misc Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/100-upgrade-postgres/">Upgrade Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/200-saving-history/">Saving history</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="whatever"
+                           />
+                    <label class="tree-toggle-label"
+                           for="whatever">Whatever</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/50-whatever/20-homelab/">Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/21-ssh/">SSH</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/30-docker/">Docker</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/150-i-might-need-these/">I might need these</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/151-plugin-rust/">Plugin system for rust projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/200-thoughts-on-side-projects/">Thoughts on side projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/201-rules-dsl/">[WIP] SaaS DSL</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/300-this-website/">This website</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/400-berlin/">Berlin</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="macos"
+                           />
+                    <label class="tree-toggle-label"
+                           for="macos">MacOS</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/60-macos/100-gpg-macos/">GPG on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/101-nix-macos/">Trying Nix on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/102-sloth-app/">Sloth app</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/103-aerospace/">Aerospace</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="food"
+                           />
+                    <label class="tree-toggle-label"
+                           for="food">Food</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/150-food/1-plum-torte/">Plum torte</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/150-food/2-pizza/">Plum torte</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="coding-exercises"
+                           checked/>
+                    <label class="tree-toggle-label"
+                           for="coding-exercises">Coding Exercises</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/10-protohackers/">Protohackers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/11-golang-exercises/">Golang exercises</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/50-project-ideas/">Project ideas</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="https://keshp.com/1000-coding-exercises/100-aoc-2020-day-1/">AoC 2020, Day 1</a>
+                            </li>
+
+                            
+                                    
+                                    
+                                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/101-aoc-2020-day-2/">AoC 2020, Day 2</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/102-aoc-2020-day-3/">AoC 2020, Day 3</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+
+        <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        <div id="wrap">
+            
+    <h2>AoC 2020, Day 1</h2>
+        <p>I'm trying to get into clojure these days. I'm not new to the lisp
+land; I maintain a pretty convoluted emacs config.</p>
+<p>But I am still a beginner. Besides, clojure is not your typical lisp
+dialect.</p>
+<h2 id="part-one">Part One</h2>
+<p>I tried solving the challenge using Python's for loop. Initially I was
+using <code>itertools.combinations_with_replacement</code> but I felt that it was
+unnecessary for something so simple.</p>
+<pre data-lang="python" style="background-color:#fcf0ca;color:#282828aa;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#9d0006;">def </span><span style="color:#407959;">find_2020</span><span>():
+</span><span>    </span><span style="color:#9d0006;">with </span><span style="color:#b57614;">open</span><span style="color:#282828;">(</span><span style="color:#79740e;">&quot;../static/advent-2020-input-day-one.txt&quot;</span><span style="color:#282828;">) </span><span style="color:#9d0006;">as </span><span>fi:
+</span><span>        numbers </span><span style="color:#b23c15;">= </span><span style="color:#b57614;">list</span><span style="color:#282828;">(</span><span style="color:#b57614;">map</span><span style="color:#282828;">(</span><span style="color:#b57614;">float</span><span style="color:#282828;">, fi.readlines()))
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">for </span><span>x </span><span style="color:#9d0006;">in </span><span>numbers:
+</span><span>        </span><span style="color:#9d0006;">for </span><span>y </span><span style="color:#9d0006;">in </span><span>numbers:
+</span><span>            </span><span style="color:#9d0006;">if </span><span>x </span><span style="color:#b23c15;">+ </span><span>y </span><span style="color:#b23c15;">== </span><span style="color:#8f3f71;">2020</span><span>:
+</span><span>                </span><span style="color:#9d0006;">return </span><span>x </span><span style="color:#b23c15;">* </span><span>y
+</span><span>
+</span><span style="color:#b57614;">print</span><span style="color:#282828;">(find_2020())
+</span></code></pre>
+<p>The result: <code>1016131.0</code>. The input file: <a href="../static/advent-2020-input-day-one.txt">advent-2020-input-day-one.txt</a></p>
+<p>The goal, however, is to do it in Clojure.</p>
+<p>So after about a dozen tries, this is what I came up with:</p>
+<pre data-lang="clojure" style="background-color:#fcf0ca;color:#282828aa;" class="language-clojure "><code class="language-clojure" data-lang="clojure"><span>(</span><span style="color:#9d0006;">def </span><span style="color:#407959;">x-input </span><span>[</span><span style="color:#8f3f71;">1895 1504 1660 1775 1743 1607 1267 1133 292
+</span><span>              </span><span style="color:#8f3f71;">1646 1285 1808 1512 1839 1869 1578 1318 1385
+</span><span>              </span><span style="color:#8f3f71;">1829 1800 1491 1600 1290 1856 1781 1881 1953
+</span><span>              </span><span style="color:#8f3f71;">2008 1681 1472 1846 2010 1619 1584 1849 1876
+</span><span>              </span><span style="color:#8f3f71;">1744 1980 1421 911 1308 1762 1398 1470 1974
+</span><span>              </span><span style="color:#8f3f71;">1902 1985 2001 1926 1374 1678 1523 1894 1597
+</span><span>              </span><span style="color:#8f3f71;">1778 1940 1362 1613 1629 1473 1633 1867 1838
+</span><span>              </span><span style="color:#8f3f71;">1931 1850 1776 1689 1311 1947 1988 1779 1381
+</span><span>              </span><span style="color:#8f3f71;">1683 1677 1675 1587 767 1401 1412 1544 1484
+</span><span>              </span><span style="color:#8f3f71;">618 1755 1073 1970 1735 1770 1623 1665 1783
+</span><span>              </span><span style="color:#8f3f71;">1400 1892 1921 1506 1978 1731 1739 1515 1354
+</span><span>              </span><span style="color:#8f3f71;">1264 1394 1763 1569 1453 1539 2006 1586 1855
+</span><span>              </span><span style="color:#8f3f71;">1609 1729 1624 506 1668 1803 1486 1767 1720
+</span><span>              </span><span style="color:#8f3f71;">1753 1994 1718 1922 1314 1250 1516 1546 1625
+</span><span>              </span><span style="color:#8f3f71;">1708 1286 1993 1785 491 1705 1924 1752 1888
+</span><span>              </span><span style="color:#8f3f71;">1651 1604 1750 1547 1481 1704 1851 904 1920
+</span><span>              </span><span style="color:#8f3f71;">1939 1277 1870 1934 1617 1833 1797 1817 1967
+</span><span>              </span><span style="color:#8f3f71;">1935 1914 1621 1468 1859 1552 1640 1709 1121
+</span><span>              </span><span style="color:#8f3f71;">1973 1343 1266 1806 1360 1299 1990 1356 1631
+</span><span>              </span><span style="color:#8f3f71;">1555 1811 1323 1794 1550 1448 1848 1826 1723
+</span><span>              </span><span style="color:#8f3f71;">1891 1302 1655 947 1580 1908 1641 1816 1701
+</span><span>              </span><span style="color:#8f3f71;">1871 1588 1843 1643 1893 1866 1628 1417 1795
+</span><span>              </span><span style="color:#8f3f71;">1995 1937</span><span>])
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">is-2020? </span><span>[v]
+</span><span>  (</span><span style="color:#282828;">= </span><span style="color:#8f3f71;">2020 </span><span>(</span><span style="color:#282828;">reduce</span><span> + v)))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">find-2020 </span><span>[]
+</span><span>  (</span><span style="color:#282828;">first
+</span><span>   (</span><span style="color:#282828;">filter
+</span><span>    is-2020?
+</span><span>    (</span><span style="color:#282828;">for </span><span>[a x-input b x-input] [a b]))))
+</span></code></pre>
+<p>This is my solution. There are many like this but this one is mine.</p>
+<h2 id="part-two">Part Two</h2>
+<p>Part two revealed itself to let me know that the requirements changed.</p>
+<p>I think now is the time to refactor both solutions from part one.</p>
+<p>Here's what the python solution looks like now:</p>
+<pre data-lang="python" style="background-color:#fcf0ca;color:#282828aa;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#9d0006;">import </span><span>operator </span><span style="color:#9d0006;">as </span><span>op
+</span><span style="color:#9d0006;">import </span><span>itertools </span><span style="color:#9d0006;">as </span><span>it
+</span><span style="color:#9d0006;">import </span><span>functools </span><span style="color:#9d0006;">as </span><span>ft
+</span><span>
+</span><span style="color:#9d0006;">def </span><span style="color:#407959;">find_2020</span><span>(</span><span style="color:#282828;">r</span><span>):
+</span><span>    </span><span style="color:#9d0006;">with </span><span style="color:#b57614;">open</span><span style="color:#282828;">(</span><span style="color:#79740e;">&quot;../static/advent-2020-input-day-one.txt&quot;</span><span style="color:#282828;">) </span><span style="color:#9d0006;">as </span><span>fi:
+</span><span>        numbers </span><span style="color:#b23c15;">= </span><span style="color:#b57614;">list</span><span style="color:#282828;">(</span><span style="color:#b57614;">map</span><span style="color:#282828;">(</span><span style="color:#b57614;">float</span><span style="color:#282828;">, fi.readlines()))
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">for </span><span>items </span><span style="color:#9d0006;">in </span><span style="color:#282828;">it.combinations_with_replacement(numbers, r)</span><span>:
+</span><span>        </span><span style="color:#9d0006;">if </span><span style="color:#b57614;">sum</span><span style="color:#282828;">(items) </span><span style="color:#b23c15;">== </span><span style="color:#8f3f71;">2020</span><span>:
+</span><span>            </span><span style="color:#9d0006;">return </span><span style="color:#282828;">ft.reduce(op.mul, items)
+</span><span>
+</span><span style="color:#b57614;">print</span><span style="color:#282828;">(</span><span style="color:#79740e;">&quot;Part one: &quot;</span><span style="color:#282828;">, find_2020(</span><span style="color:#8f3f71;">2</span><span style="color:#282828;">))
+</span><span style="color:#b57614;">print</span><span style="color:#282828;">(</span><span style="color:#79740e;">&quot;Part two: &quot;</span><span style="color:#282828;">, find_2020(</span><span style="color:#8f3f71;">3</span><span style="color:#282828;">))
+</span></code></pre>
+<p>I went back to using the <code>itertools</code>. I went a little bit further and
+made the function generic.</p>
+<p>Now, it'll be able to adapt similar change in requirements.</p>
+<p>Time to redo the Clojure code. It looks like this now:</p>
+<pre data-lang="clojure" style="background-color:#fcf0ca;color:#282828aa;" class="language-clojure "><code class="language-clojure" data-lang="clojure"><span>(</span><span style="color:#282828;">ns</span><span> advent-of-code.core
+</span><span>  (</span><span style="color:#282828;">:gen-class</span><span>))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">def </span><span style="color:#407959;">numbers </span><span>[</span><span style="color:#8f3f71;">1895 1504 1660 1775 1743 1607 1267 1133 292
+</span><span>              </span><span style="color:#8f3f71;">1646 1285 1808 1512 1839 1869 1578 1318 1385
+</span><span>              </span><span style="color:#8f3f71;">1829 1800 1491 1600 1290 1856 1781 1881 1953
+</span><span>              </span><span style="color:#8f3f71;">2008 1681 1472 1846 2010 1619 1584 1849 1876
+</span><span>              </span><span style="color:#8f3f71;">1744 1980 1421 911 1308 1762 1398 1470 1974
+</span><span>              </span><span style="color:#8f3f71;">1902 1985 2001 1926 1374 1678 1523 1894 1597
+</span><span>              </span><span style="color:#8f3f71;">1778 1940 1362 1613 1629 1473 1633 1867 1838
+</span><span>              </span><span style="color:#8f3f71;">1931 1850 1776 1689 1311 1947 1988 1779 1381
+</span><span>              </span><span style="color:#8f3f71;">1683 1677 1675 1587 767 1401 1412 1544 1484
+</span><span>              </span><span style="color:#8f3f71;">618 1755 1073 1970 1735 1770 1623 1665 1783
+</span><span>              </span><span style="color:#8f3f71;">1400 1892 1921 1506 1978 1731 1739 1515 1354
+</span><span>              </span><span style="color:#8f3f71;">1264 1394 1763 1569 1453 1539 2006 1586 1855
+</span><span>              </span><span style="color:#8f3f71;">1609 1729 1624 506 1668 1803 1486 1767 1720
+</span><span>              </span><span style="color:#8f3f71;">1753 1994 1718 1922 1314 1250 1516 1546 1625
+</span><span>              </span><span style="color:#8f3f71;">1708 1286 1993 1785 491 1705 1924 1752 1888
+</span><span>              </span><span style="color:#8f3f71;">1651 1604 1750 1547 1481 1704 1851 904 1920
+</span><span>              </span><span style="color:#8f3f71;">1939 1277 1870 1934 1617 1833 1797 1817 1967
+</span><span>              </span><span style="color:#8f3f71;">1935 1914 1621 1468 1859 1552 1640 1709 1121
+</span><span>              </span><span style="color:#8f3f71;">1973 1343 1266 1806 1360 1299 1990 1356 1631
+</span><span>              </span><span style="color:#8f3f71;">1555 1811 1323 1794 1550 1448 1848 1826 1723
+</span><span>              </span><span style="color:#8f3f71;">1891 1302 1655 947 1580 1908 1641 1816 1701
+</span><span>              </span><span style="color:#8f3f71;">1871 1588 1843 1643 1893 1866 1628 1417 1795
+</span><span>              </span><span style="color:#8f3f71;">1995 1937</span><span>])
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">is-2020? </span><span>[v]
+</span><span>  (</span><span style="color:#282828;">= </span><span style="color:#8f3f71;">2020 </span><span>(</span><span style="color:#282828;">reduce</span><span> + v)))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">product </span><span>[v]
+</span><span>  (</span><span style="color:#282828;">reduce</span><span> * v))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">find-value </span><span>[list-compr]
+</span><span>  (</span><span style="color:#282828;">product
+</span><span>   </span><span style="font-style:italic;color:#928374;">; re: first -- it is needed because there is a duplicate entry --
+</span><span>   </span><span style="font-style:italic;color:#928374;">; maybe I&#39;ll be able to tackle this more cleverly in the future
+</span><span>   (</span><span style="color:#282828;">first
+</span><span>    (</span><span style="color:#282828;">filter</span><span> is-2020? list-compr))))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">day1-part1 </span><span>[]
+</span><span>  (</span><span style="color:#282828;">find-value </span><span>(</span><span style="color:#282828;">for </span><span>[a numbers b numbers] [a b])))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">day1-part2 </span><span>[]
+</span><span>  (</span><span style="color:#282828;">find-value </span><span>(</span><span style="color:#282828;">for </span><span>[a numbers b numbers c numbers] [a b c])))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">day1 </span><span>[]
+</span><span>  (</span><span style="color:#282828;">println </span><span style="color:#79740e;">&quot;Part 1: &quot;  </span><span>(</span><span style="color:#282828;">day1-part1</span><span>)
+</span><span>           </span><span style="color:#79740e;">&quot;\nPart 2: &quot; </span><span>(</span><span style="color:#282828;">day1-part2</span><span>)))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">-main
+</span><span>  </span><span style="color:#79740e;">&quot;Advent of Code&quot;
+</span><span>  [&amp; args]
+</span><span>  (</span><span style="color:#282828;">day1</span><span>))
+</span></code></pre>
+<p>It works but I am not entirely satisfied. My clojure knowledge is
+limited; the standard library is still very unknown.</p>
+<p>Having said that, I think this looks much readable than my solution
+from Part 1.</p>
+<p>The github repo for the clojure solution is <a rel="noopener" target="_blank" href="https://github.com/poudel/advent-2020-clj">here</a>.</p>
+
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://keshp.com/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://keshp.com/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://keshp.com/js.js" defer></script>
+
+</body>
+</html>

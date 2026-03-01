@@ -1,0 +1,433 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://keshp.com/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> thoughts in progress | Trying Nix on MacOS </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <h1><a href="https:&#x2F;&#x2F;keshp.com">thoughts in progress</a></h1>
+            <div>
+                <small>it&#x27;s not even a proper wiki</small>
+            </div>
+            <br>
+
+            <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                <input class="tree-toggle" type="checkbox" id="python"
+                           />
+                    <label class="tree-toggle-label"
+                           for="python">Python</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/05-python/100-fav-python-talks/">Favorite Python Talks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/10-py-environments/">Python environments</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/300-py-bookmarks/">Python Bookmarks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/400-dynamic-serializers-drf/">Dynamic serializers in DRF</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/401-django-side-projects/">Starting side projects with Django</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/402-django-ksuid-field/">Django KSUID field</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/500-simple-scraper/">Generic scraper in Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/501-httpserver/">HTTP Server</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/700-click/">Click</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="emacs"
+                           />
+                    <label class="tree-toggle-label"
+                           for="emacs">Emacs</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/15-emacs/10-using-emacs-plus/">Emacs Plus</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/200-dwim-shell-commands/">DWIM shell command</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/201-magit-forge/">Magit Forge</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/202-refactoring/">Config refactoring</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="snippets"
+                           />
+                    <label class="tree-toggle-label"
+                           for="snippets">Snippets</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/20-snippets/new-entry-helper/">Automating creating new entries</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/tailing-logs/">tailing logs</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/inkpalm/">InkPalm 5 mini e-reader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/cleaning-lelit-elizabeth/">Cleaning Lelit Elizabeth</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/slack-org-capture/">org slack messages</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/files-are-mess/">dorotac on filesystems</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/dms-again/">Document management, again</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/pycharm-docker-interpreter/">Pycharm not finding Docker interpreter</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/magit-find-file/">magit-find-file</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/go-unique-package/">Go unique package</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/quest-document-management/">Document management</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/thinkpad-homelab/">ThinkPad T470 for Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/discovering-hyperbole/">Discovering Hyperbole</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/using-minions-el/">Replacing rich-minority with minions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/emacs-for-python/">Back to using Emacs for Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/everything-inside-dotfiles/">Keeping everything inside ~&#x2F;dotfiles directory</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/linux-laptop/">Linux laptop to play with</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/git-subtree-experiments/">Experiments with git-subtree</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="postgresql"
+                           />
+                    <label class="tree-toggle-label"
+                           for="postgresql">PostgreSQL</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/40-postgres/01-general/">Misc Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/100-upgrade-postgres/">Upgrade Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/200-saving-history/">Saving history</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="whatever"
+                           />
+                    <label class="tree-toggle-label"
+                           for="whatever">Whatever</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/50-whatever/20-homelab/">Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/21-ssh/">SSH</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/30-docker/">Docker</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/150-i-might-need-these/">I might need these</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/151-plugin-rust/">Plugin system for rust projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/200-thoughts-on-side-projects/">Thoughts on side projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/201-rules-dsl/">[WIP] SaaS DSL</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/300-this-website/">This website</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/400-berlin/">Berlin</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="macos"
+                           checked/>
+                    <label class="tree-toggle-label"
+                           for="macos">MacOS</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/60-macos/100-gpg-macos/">GPG on MacOS</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="https://keshp.com/60-macos/101-nix-macos/">Trying Nix on MacOS</a>
+                            </li>
+
+                            
+                                    
+                                    
+                                        <li >
+                                <a href="https://keshp.com/60-macos/102-sloth-app/">Sloth app</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/103-aerospace/">Aerospace</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="food"
+                           />
+                    <label class="tree-toggle-label"
+                           for="food">Food</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/150-food/1-plum-torte/">Plum torte</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/150-food/2-pizza/">Plum torte</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="coding-exercises"
+                           />
+                    <label class="tree-toggle-label"
+                           for="coding-exercises">Coding Exercises</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/10-protohackers/">Protohackers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/11-golang-exercises/">Golang exercises</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/50-project-ideas/">Project ideas</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/100-aoc-2020-day-1/">AoC 2020, Day 1</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/101-aoc-2020-day-2/">AoC 2020, Day 2</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/102-aoc-2020-day-3/">AoC 2020, Day 3</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+
+        <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        <div id="wrap">
+            
+    <h2>Trying Nix on MacOS</h2>
+        <p>Here's what I'm doing to try nix.</p>
+<h1 id="installation">Installation</h1>
+<p>Ran this command from the <a rel="noopener" target="_blank" href="https://nixos.org/download">Nixos download</a> page.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">sh </span><span style="color:#b23c15;">&lt;</span><span style="color:#282828;">(curl -L https://nixos.org/nix/install)
+</span></code></pre>
+<p>What follows is a really nice and friendly series of prompts. The
+verbosity is perfect. For example:</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>Switching to the Multi-user Installer
+</span><span>Welcome to the Multi-User Nix Installation
+</span><span>
+</span><span>This installation tool will set up your computer with the Nix package
+</span><span>manager. This will happen in a few stages:
+</span><span>
+</span><span>1. Make sure your computer doesn&#39;t already have Nix. If it does, I
+</span><span>   will show you instructions on how to clean up your old install.
+</span><span>
+</span><span>2. Show you what I am going to install and where. Then I will ask
+</span><span>   if you are ready to continue.
+</span><span>
+</span><span>3. Create the system users (uids [301..332]) and groups (gid 30000)
+</span><span>   that the Nix daemon uses to run builds.
+</span><span>
+</span><span>4. Perform the basic installation of the Nix files daemon.
+</span><span>
+</span><span>5. Configure your shell to import special Nix Profile files, so you
+</span><span>   can use Nix.
+</span><span>
+</span><span>6. Start the Nix daemon.
+</span><span>
+</span><span>Would you like to see a more detailed list of what I will do?
+</span><span>[y/n] y
+</span></code></pre>
+<p>I go with <code>y</code>, which makes it spit the following</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>I will:
+</span><span>
+</span><span> - make sure your computer doesn&#39;t already have Nix files
+</span><span>   (if it does, I will tell you how to clean them up.)
+</span><span> - create local users (see the list above for the users I&#39;ll make)
+</span><span> - create a local group (nixbld)
+</span><span> - install Nix in to /nix
+</span><span> - create a configuration file in /etc/nix
+</span><span> - set up the &quot;default profile&quot; by creating some Nix-related files in
+</span><span>   /var/root
+</span><span> - back up /etc/bashrc to /etc/bashrc.backup-before-nix
+</span><span> - update /etc/bashrc to include some Nix configuration
+</span><span> - back up /etc/zshrc to /etc/zshrc.backup-before-nix
+</span><span> - update /etc/zshrc to include some Nix configuration
+</span><span> - create a Nix volume and a LaunchDaemon to mount it
+</span><span> - create a LaunchDaemon (at /Library/LaunchDaemons/org.nixos.nix-daemon.plist) for nix-daemon
+</span><span>
+</span><span>Ready to continue?
+</span><span>[y/n] y
+</span></code></pre>
+<p>After a few similar prompts, I'm presented with the following:</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>[...]
+</span><span>
+</span><span>Alright! We&#39;re done!
+</span><span>Try it! Open a new terminal, and type:
+</span><span>
+</span><span>  $ nix-shell -p nix-info --run &quot;nix-info -m&quot;
+</span><span>
+</span><span>Thank you for using this installer. If you have any feedback or need
+</span><span>help, don&#39;t hesitate:
+</span><span>
+</span><span>You can open an issue at
+</span><span>https://github.com/NixOS/nix/issues/new?labels=installer&amp;template=installer.md
+</span><span>
+</span><span>Or get in touch with the community: https://nixos.org/community
+</span><span>
+</span><span>---- Reminders -----------------------------------------------------------------
+</span><span>[ 1 ]
+</span><span>Nix won&#39;t work in active shell sessions until you restart them.
+</span></code></pre>
+<p>So yeah, the nix-daemon is alive and kicking and I have a <code>nix-shell</code>
+that I need to invoke. Everything went well. Running the command for
+the first time fetched the required packages and then printed the
+following.</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span> - system: `&quot;aarch64-darwin&quot;`
+</span><span> - host os: `Darwin 22.5.0, macOS 13.4.1`
+</span><span> - multi-user?: `yes`
+</span><span> - sandbox: `no`
+</span><span> - version: `nix-env (Nix) 2.19.1`
+</span><span> - channels(root): `&quot;nixpkgs&quot;`
+</span><span> - nixpkgs: `/nix/var/nix/profiles/per-user/root/channels/nixpkgs`
+</span></code></pre>
+<h1 id="first-package">First package</h1>
+<p>I decided to install <code>zola</code> as the first ever package with nix. I ran
+the following:</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">nix-env -iA nixpkgs.zola
+</span></code></pre>
+<p>Running <code>which zola</code> gave me the following</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>/Users/kes/.nix-profile/bin/zola
+</span></code></pre>
+<h1 id="more-packages">More packages</h1>
+<p>Currently I'm not using the nix lang to define my packages. I intend
+to do that at a later point i.e. after getting more comfortable with
+it.</p>
+<h1 id="links">Links</h1>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://nixos.org/download">Download nixos</a></li>
+<li><a rel="noopener" target="_blank" href="https://jvns.ca/blog/2023/02/28/some-notes-on-using-nix/">Some notes on using nix</a> - jvns</li>
+</ul>
+
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://keshp.com/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://keshp.com/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://keshp.com/js.js" defer></script>
+
+</body>
+</html>

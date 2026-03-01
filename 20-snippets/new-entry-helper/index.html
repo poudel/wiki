@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://keshp.com/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> thoughts in progress | Automating creating new entries </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <h1><a href="https:&#x2F;&#x2F;keshp.com">thoughts in progress</a></h1>
+            <div>
+                <small>it&#x27;s not even a proper wiki</small>
+            </div>
+            <br>
+
+            <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                <input class="tree-toggle" type="checkbox" id="python"
+                           />
+                    <label class="tree-toggle-label"
+                           for="python">Python</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/05-python/100-fav-python-talks/">Favorite Python Talks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/10-py-environments/">Python environments</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/300-py-bookmarks/">Python Bookmarks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/400-dynamic-serializers-drf/">Dynamic serializers in DRF</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/401-django-side-projects/">Starting side projects with Django</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/402-django-ksuid-field/">Django KSUID field</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/500-simple-scraper/">Generic scraper in Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/501-httpserver/">HTTP Server</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/700-click/">Click</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="emacs"
+                           />
+                    <label class="tree-toggle-label"
+                           for="emacs">Emacs</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/15-emacs/10-using-emacs-plus/">Emacs Plus</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/200-dwim-shell-commands/">DWIM shell command</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/201-magit-forge/">Magit Forge</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/202-refactoring/">Config refactoring</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="snippets"
+                           checked/>
+                    <label class="tree-toggle-label"
+                           for="snippets">Snippets</label>
+
+                    <ul class="subtree">
+                        <li class="active">
+                                <a href="https://keshp.com/20-snippets/new-entry-helper/">Automating creating new entries</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/tailing-logs/">tailing logs</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/inkpalm/">InkPalm 5 mini e-reader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/cleaning-lelit-elizabeth/">Cleaning Lelit Elizabeth</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/slack-org-capture/">org slack messages</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/files-are-mess/">dorotac on filesystems</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/dms-again/">Document management, again</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/pycharm-docker-interpreter/">Pycharm not finding Docker interpreter</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/magit-find-file/">magit-find-file</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/go-unique-package/">Go unique package</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/quest-document-management/">Document management</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/thinkpad-homelab/">ThinkPad T470 for Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/discovering-hyperbole/">Discovering Hyperbole</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/using-minions-el/">Replacing rich-minority with minions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/emacs-for-python/">Back to using Emacs for Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/everything-inside-dotfiles/">Keeping everything inside ~&#x2F;dotfiles directory</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/linux-laptop/">Linux laptop to play with</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/git-subtree-experiments/">Experiments with git-subtree</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="postgresql"
+                           />
+                    <label class="tree-toggle-label"
+                           for="postgresql">PostgreSQL</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/40-postgres/01-general/">Misc Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/100-upgrade-postgres/">Upgrade Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/200-saving-history/">Saving history</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="whatever"
+                           />
+                    <label class="tree-toggle-label"
+                           for="whatever">Whatever</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/50-whatever/20-homelab/">Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/21-ssh/">SSH</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/30-docker/">Docker</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/150-i-might-need-these/">I might need these</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/151-plugin-rust/">Plugin system for rust projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/200-thoughts-on-side-projects/">Thoughts on side projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/201-rules-dsl/">[WIP] SaaS DSL</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/300-this-website/">This website</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/400-berlin/">Berlin</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="macos"
+                           />
+                    <label class="tree-toggle-label"
+                           for="macos">MacOS</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/60-macos/100-gpg-macos/">GPG on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/101-nix-macos/">Trying Nix on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/102-sloth-app/">Sloth app</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/103-aerospace/">Aerospace</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="food"
+                           />
+                    <label class="tree-toggle-label"
+                           for="food">Food</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/150-food/1-plum-torte/">Plum torte</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/150-food/2-pizza/">Plum torte</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="coding-exercises"
+                           />
+                    <label class="tree-toggle-label"
+                           for="coding-exercises">Coding Exercises</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/10-protohackers/">Protohackers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/11-golang-exercises/">Golang exercises</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/50-project-ideas/">Project ideas</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/100-aoc-2020-day-1/">AoC 2020, Day 1</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/101-aoc-2020-day-2/">AoC 2020, Day 2</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/102-aoc-2020-day-3/">AoC 2020, Day 3</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+
+        <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        <div id="wrap">
+            
+    <h2>Automating creating new entries</h2>
+        <p>Up until now, new entries would be created manually. The process goes
+like this:</p>
+<ol>
+<li>I visit a new file in the appropriate directory. The name of the
+file nowadays contain the date of creation and the slug. Do that by
+hand.</li>
+<li>Open an old file to copy the frontmatter.</li>
+<li>Paste the frontmatter on to the new file and modify the title and
+date. This is probably slower than writing it from scratch every
+time in hindsight.</li>
+<li>Start writing the post.</li>
+</ol>
+<p>As you can see, this is an annoying bit of friction. So on Feb 2nd
+2025, I finally wrote a yasnippet for the frontmatter.</p>
+<pre data-lang="text" style="background-color:#fcf0ca;color:#282828aa;" class="language-text "><code class="language-text" data-lang="text"><span># -*- mode: snippet -*-
+</span><span># name: fm
+</span><span># key: fm
+</span><span># --
+</span><span>+++
+</span><span>title = &quot;$1&quot;
+</span><span>date = `(format-time-string &quot;%Y-%m-%d&quot;)`
+</span><span>tags = [$2]
+</span><span>draft = ${3:false}
+</span><span>+++
+</span><span>
+</span><span>$4
+</span></code></pre>
+<p>This is great but I was in the mood for more. I still needed to
+manually type the slug and the date when creating the new file.</p>
+<p>So, with some ChatGPT help and misdirection, I ended up with the
+following snippet.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">defvar 
+</span><span>  kp</span><span style="color:#b23c15;">-</span><span>wiki</span><span style="color:#b23c15;">-</span><span>proj</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">directory
+</span><span>  </span><span style="color:#79740e;">&quot;~/Projects/wiki/&quot;
+</span><span>  </span><span style="color:#79740e;">&quot;Directory root of the wiki.&quot;
+</span><span>)
+</span><span>
+</span><span>(</span><span style="color:#b57614;">defvar 
+</span><span>  kp</span><span style="color:#b23c15;">-</span><span>wiki</span><span style="color:#b23c15;">-</span><span>new</span><span style="color:#b23c15;">-</span><span>entry</span><span style="color:#b23c15;">-</span><span>title 
+</span><span>  </span><span style="color:#79740e;">&quot;&quot;
+</span><span>  </span><span style="color:#79740e;">&quot;Set when creating a new wiki entry so that yasnippet can expand with it.&quot;</span><span>)
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defun </span><span style="color:#407959;">kp-wiki-new-entry </span><span>()
+</span><span>  </span><span style="color:#79740e;">&quot;Create a new entry in the wiki&quot;
+</span><span>  (interactive)
+</span><span>  (</span><span style="color:#9d0006;">let</span><span style="color:#b23c15;">* </span><span>((base</span><span style="color:#b23c15;">-</span><span>dir (file</span><span style="color:#b23c15;">-</span><span>name</span><span style="color:#b23c15;">-</span><span>concat kp</span><span style="color:#b23c15;">-</span><span>wiki</span><span style="color:#b23c15;">-</span><span>proj</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">directory </span><span style="color:#79740e;">&quot;content/&quot;</span><span>))
+</span><span>         (subdirs (seq</span><span style="color:#b23c15;">-</span><span>filter </span><span style="color:#8f3f71;">#&#39;file-directory-p </span><span>(</span><span style="color:#b57614;">directory</span><span style="color:#b23c15;">-</span><span>files base</span><span style="color:#b23c15;">-</span><span>dir </span><span style="color:#8f3f71;">t </span><span style="color:#79740e;">&quot;^[^.]+&quot;</span><span>)))
+</span><span>         (subdir (concat (completing</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">read </span><span style="color:#79740e;">&quot;Choose subdirectory: &quot;</span><span> subdirs </span><span style="color:#8f3f71;">nil t</span><span>) </span><span style="color:#79740e;">&quot;/&quot;</span><span>))
+</span><span>         (kp</span><span style="color:#b23c15;">-</span><span>wiki</span><span style="color:#b23c15;">-</span><span>new</span><span style="color:#b23c15;">-</span><span>entry</span><span style="color:#b23c15;">-</span><span>title (</span><span style="color:#b57614;">read</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">string </span><span style="color:#79740e;">&quot;Title: &quot;</span><span>))
+</span><span>         (slug (</span><span style="color:#b57614;">replace</span><span style="color:#b23c15;">-</span><span>regexp</span><span style="color:#b23c15;">-</span><span>in</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">string </span><span style="color:#79740e;">&quot;[^a-z0-9]+&quot; &quot;-&quot; </span><span>(downcase kp</span><span style="color:#b23c15;">-</span><span>wiki</span><span style="color:#b23c15;">-</span><span>new</span><span style="color:#b23c15;">-</span><span>entry</span><span style="color:#b23c15;">-</span><span>title)))
+</span><span>         (filename (concat subdir (</span><span style="color:#b57614;">format</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">time</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">string </span><span style="color:#79740e;">&quot;%Y-%m-%d&quot;</span><span>) </span><span style="color:#79740e;">&quot;-&quot;</span><span> slug </span><span style="color:#79740e;">&quot;.md&quot;</span><span>)))
+</span><span>    (</span><span style="color:#b57614;">find</span><span style="color:#b23c15;">-</span><span>file filename)
+</span><span>    (markdown</span><span style="color:#b23c15;">-</span><span>mode)
+</span><span>    (yas</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">expand</span><span style="color:#b23c15;">-</span><span>snippet (yas</span><span style="color:#b23c15;">-</span><span>lookup</span><span style="color:#b23c15;">-</span><span>snippet </span><span style="color:#79740e;">&quot;fm&quot;</span><span>))
+</span><span>    ))
+</span></code></pre>
+<p>This function prompts me for a directory and the title of the new
+entry. It then visits the new file as a markdown buffer. The file name
+contains the iso date and the slugified title.</p>
+<p>The buffer also opens with a yasnippet expansion of <code>fm</code> snippet which
+contains the front matter. I could've just pasted the frontmatter in
+Elisp, but yasnippet is more powerful because it lets me use
+placeholders with defaults.</p>
+<pre data-lang="text" style="background-color:#fcf0ca;color:#282828aa;" class="language-text "><code class="language-text" data-lang="text"><span># -*- mode: snippet -*-
+</span><span># name: fm
+</span><span># key: fm
+</span><span># --
+</span><span>+++
+</span><span>title = &quot;${1:`(format &quot;%s&quot; kp-wiki-new-entry-title)`}&quot;
+</span><span>date = `(format-time-string &quot;%Y-%m-%d&quot;)`
+</span><span>tags = [$2]
+</span><span>draft = ${3:false}
+</span><span>+++
+</span><span>
+</span><span>$4
+</span></code></pre>
+<p>This is what the snippet looks like now. At first, I tried to pass the
+<code>title</code> to <code>yas-expand-snippet</code> to replace <code>$1</code> but it didn't work.</p>
+<p>So I went with the <code>kp-wiki-new-entry-title</code> variable and evaluate it
+in the snippet like this.</p>
+<p>This is so convenient, and I should've done this sooner.</p>
+
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://keshp.com/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://keshp.com/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://keshp.com/js.js" defer></script>
+
+</body>
+</html>

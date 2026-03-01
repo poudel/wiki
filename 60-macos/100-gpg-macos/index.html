@@ -1,0 +1,560 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://keshp.com/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> thoughts in progress | GPG on MacOS </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <h1><a href="https:&#x2F;&#x2F;keshp.com">thoughts in progress</a></h1>
+            <div>
+                <small>it&#x27;s not even a proper wiki</small>
+            </div>
+            <br>
+
+            <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                <input class="tree-toggle" type="checkbox" id="python"
+                           />
+                    <label class="tree-toggle-label"
+                           for="python">Python</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/05-python/100-fav-python-talks/">Favorite Python Talks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/10-py-environments/">Python environments</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/300-py-bookmarks/">Python Bookmarks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/400-dynamic-serializers-drf/">Dynamic serializers in DRF</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/401-django-side-projects/">Starting side projects with Django</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/402-django-ksuid-field/">Django KSUID field</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/500-simple-scraper/">Generic scraper in Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/501-httpserver/">HTTP Server</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/700-click/">Click</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="emacs"
+                           />
+                    <label class="tree-toggle-label"
+                           for="emacs">Emacs</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/15-emacs/10-using-emacs-plus/">Emacs Plus</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/200-dwim-shell-commands/">DWIM shell command</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/201-magit-forge/">Magit Forge</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/202-refactoring/">Config refactoring</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="snippets"
+                           />
+                    <label class="tree-toggle-label"
+                           for="snippets">Snippets</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/20-snippets/new-entry-helper/">Automating creating new entries</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/tailing-logs/">tailing logs</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/inkpalm/">InkPalm 5 mini e-reader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/cleaning-lelit-elizabeth/">Cleaning Lelit Elizabeth</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/slack-org-capture/">org slack messages</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/files-are-mess/">dorotac on filesystems</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/dms-again/">Document management, again</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/pycharm-docker-interpreter/">Pycharm not finding Docker interpreter</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/magit-find-file/">magit-find-file</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/go-unique-package/">Go unique package</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/quest-document-management/">Document management</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/thinkpad-homelab/">ThinkPad T470 for Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/discovering-hyperbole/">Discovering Hyperbole</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/using-minions-el/">Replacing rich-minority with minions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/emacs-for-python/">Back to using Emacs for Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/everything-inside-dotfiles/">Keeping everything inside ~&#x2F;dotfiles directory</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/linux-laptop/">Linux laptop to play with</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/git-subtree-experiments/">Experiments with git-subtree</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="postgresql"
+                           />
+                    <label class="tree-toggle-label"
+                           for="postgresql">PostgreSQL</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/40-postgres/01-general/">Misc Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/100-upgrade-postgres/">Upgrade Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/200-saving-history/">Saving history</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="whatever"
+                           />
+                    <label class="tree-toggle-label"
+                           for="whatever">Whatever</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/50-whatever/20-homelab/">Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/21-ssh/">SSH</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/30-docker/">Docker</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/150-i-might-need-these/">I might need these</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/151-plugin-rust/">Plugin system for rust projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/200-thoughts-on-side-projects/">Thoughts on side projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/201-rules-dsl/">[WIP] SaaS DSL</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/300-this-website/">This website</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/400-berlin/">Berlin</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="macos"
+                           checked/>
+                    <label class="tree-toggle-label"
+                           for="macos">MacOS</label>
+
+                    <ul class="subtree">
+                        <li class="active">
+                                <a href="https://keshp.com/60-macos/100-gpg-macos/">GPG on MacOS</a>
+                            </li>
+
+                            
+                                    
+                                    
+                                        <ul id="toc">
+                                            <li><a href="
+                                                        https://keshp.com/60-macos/100-gpg-macos/#gpg-macos">Setting up GPG</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://keshp.com/60-macos/100-gpg-macos/#keep-in-mind">Keep in mind</a>
+                                                    <ul>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#always-set-an-expiry-date">Set an expiry date</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#always-master-key-separate">Keep master key separate</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#always-use-subkeys">Use subkeys</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#encrypting-vs-signing-keys">Encrypting vs signing keys</a>
+                                                                </li>
+                                                            </ul>
+                                                    </li>
+                                            <li><a href="
+                                                        https://keshp.com/60-macos/100-gpg-macos/#steps">Steps</a>
+                                                    <ul>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#generating-key-pairs">Generating key pairs</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#generating-subkeys-for-regular-usage">Generating Subkeys for regular usage</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#exportng-keys-to-backup">Exportng keys to backup</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#deleting-exported-keys-from-the-gpg-keyring">Deleting exported keys from the GPG keyring</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#import-only-the-subkeys">Import only the subkeys</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#trust-a-key">Trust a key</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#using-emacs-to-edit-dot-gpg-files">Using Emacs to edit .gpg files</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/60-macos/100-gpg-macos/#using-signing-keys-to-sign-git-commits">Using signing keys to sign git commits</a>
+                                                                </li>
+                                                            </ul>
+                                                    </li>
+                                            <li><a href="
+                                                        https://keshp.com/60-macos/100-gpg-macos/#troubleshooting">Troubleshooting</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://keshp.com/60-macos/100-gpg-macos/#links">Links</a>
+                                                    </li>
+                                            </ul>
+                                    <li >
+                                <a href="https://keshp.com/60-macos/101-nix-macos/">Trying Nix on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/102-sloth-app/">Sloth app</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/103-aerospace/">Aerospace</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="food"
+                           />
+                    <label class="tree-toggle-label"
+                           for="food">Food</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/150-food/1-plum-torte/">Plum torte</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/150-food/2-pizza/">Plum torte</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="coding-exercises"
+                           />
+                    <label class="tree-toggle-label"
+                           for="coding-exercises">Coding Exercises</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/10-protohackers/">Protohackers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/11-golang-exercises/">Golang exercises</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/50-project-ideas/">Project ideas</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/100-aoc-2020-day-1/">AoC 2020, Day 1</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/101-aoc-2020-day-2/">AoC 2020, Day 2</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/102-aoc-2020-day-3/">AoC 2020, Day 3</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+
+        <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        <div id="wrap">
+            
+    <h2>GPG on MacOS</h2>
+        <h2 id="gpg-macos">Setting up GPG</h2>
+<p>Recently I had to setup GPG on Mac to be able to encrypt/decrypt
+certain files. I'd used GPG tools a long time ago but never liked
+the way it works. For example it automatically imports some default
+keys on install, which seems unnecessary to me.</p>
+<p>Turns out it's not that difficult to install GPG using <code>brew</code> and get
+it working.</p>
+<h2 id="keep-in-mind">Keep in mind</h2>
+<h3 id="always-set-an-expiry-date">Set an expiry date</h3>
+<p>Make sure that keys are always expirable. They can be renewed later
+on. Or if you lose it then you don't have to worry about it for long.</p>
+<h3 id="always-master-key-separate">Keep master key separate</h3>
+<p>This is the main key that has <code>SC</code> permission/usages when you run <code>gpg --list-secret-keys</code>. The <code>C</code> part means that it can issue/certify new
+subkeys.</p>
+<p>This key should be kept in a secure location and should only be used
+to issue new subkeys or revoke/renew old ones.</p>
+<h3 id="always-use-subkeys">Use subkeys</h3>
+<p>Instead of using your master key for encryption and signing, it's
+better to use the subkeys so that you can revoke them easily if you
+lose them.</p>
+<h3 id="encrypting-vs-signing-keys">Encrypting vs signing keys</h3>
+<p>Encrypting keys have <code>E</code> permission and signing have <code>S</code>. You use the
+former for encryption and the latter for singing exclusively.</p>
+<h2 id="steps">Steps</h2>
+<h3 id="generating-key-pairs">Generating key pairs</h3>
+<p>Returns an interactive prompt that guides you through creating a key
+pair.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg --full-gen-key
+</span></code></pre>
+<p>There's a question of whether to chose RSA
+or ed25519. The latter is selected by default.</p>
+<h3 id="generating-subkeys-for-regular-usage">Generating Subkeys for regular usage</h3>
+<p>This allows us to easily to issue/revoke
+certain keys if they're compromised without
+throwing away the master key.</p>
+<p>Get the key ID</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg --list-secret-keys
+</span></code></pre>
+<p>The line beginning with <code>sec</code> is the master key. It has <code>[SC]</code> which
+is Signing and Certification. For the line <code>ssb</code>, the <code>[E]</code> indicates
+that it's an encryption subkey. However, we're going to create a seprate
+signing subkey. Start by editing the key.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg --edit-key </span><span style="color:#b23c15;">&lt;</span><span style="color:#282828;">key-id-long-very-long</span><span style="color:#b23c15;">&gt;
+</span></code></pre>
+<p>In the interactive gpg shell, enter <code>addkey</code> command.</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>addkey
+</span></code></pre>
+<p>You'll see:</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>Please select what kind of key you want:
+</span><span>   (3) DSA (sign only)
+</span><span>   (4) RSA (sign only)
+</span><span>   (5) Elgamal (encrypt only)
+</span><span>   (6) RSA (encrypt only)
+</span><span>  (10) ECC (sign only)
+</span><span>  (12) ECC (encrypt only)
+</span><span>  (14) Existing key from card
+</span><span>Your selection?
+</span></code></pre>
+<p>Select option 10 and follow from there.</p>
+<h3 id="exportng-keys-to-backup">Exportng keys to backup</h3>
+<p>We export the keys and make a backup. Then we delete the master key
+from the keyring and import the subkeys.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg --output keshab.rsa4096.public.gpg --export </span><span style="color:#b23c15;">&lt;</span><span style="color:#282828;">KEY-ID</span><span style="color:#b23c15;">&gt;
+</span><span style="color:#282828;">gpg --output keshab.rsa4096.secret.gpg --export-secret-key </span><span style="color:#b23c15;">&lt;</span><span style="color:#282828;">KEY-ID</span><span style="color:#b23c15;">&gt;
+</span><span style="color:#282828;">gpg --output keshab.rsa4096.secretsubkeys.gpg --export-secret-subkeys </span><span style="color:#b23c15;">&lt;</span><span style="color:#282828;">KEY-ID</span><span style="color:#b23c15;">&gt;
+</span></code></pre>
+<p>Now backup those files in a secure location.</p>
+<h3 id="deleting-exported-keys-from-the-gpg-keyring">Deleting exported keys from the GPG keyring</h3>
+<p>To delete the keys, run:</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg --delete-secret-keys </span><span style="color:#b23c15;">&lt;</span><span style="color:#282828;">KEY-ID</span><span style="color:#b23c15;">&gt;
+</span></code></pre>
+<p>And follow the instructions. Run <code>gpg --list-secret-keys</code> to confirm
+the deletion.</p>
+<h3 id="import-only-the-subkeys">Import only the subkeys</h3>
+<p>Finally, import only the subkeys:</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg --import keshab.rsa4096.secretsubkeys.gpg
+</span></code></pre>
+<p>and follow the instructions. Run <code>gpg --list-secret-keys</code> again to
+confirm the import worked.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg --list-secret-keys
+</span></code></pre>
+<p>The suffix hash on <code>sec#</code> suggests that only subkeys are available.</p>
+<h3 id="trust-a-key">Trust a key</h3>
+<p>This is not needed for most cases, esp. if the key was generated in
+this computer. An imported key can be "trusted" by doing the
+following.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg --edit-key </span><span style="color:#b23c15;">&lt;</span><span style="color:#282828;">email/key-id</span><span style="color:#b23c15;">&gt;
+</span></code></pre>
+<p>Then in the interactive shell, type <code>trust</code> command.</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>Command&gt; trust
+</span></code></pre>
+<p>You'll be prompted to select how far you want to trust the key.</p>
+<h3 id="using-emacs-to-edit-dot-gpg-files">Using Emacs to edit <code>.gpg</code> files</h3>
+<p>Add following in <code>~/.gnupg/gpg-agent.conf</code> to use Emacs for pinentry
+and not the external dialogue.</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>allow-emacs-pinentry
+</span><span>allow-loopback-pinentry
+</span></code></pre>
+<p>Kill the GPG agent by running</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpgconf --kill gpg-agent
+</span></code></pre>
+<p>Then add this to the init file to select the default encrypting key and recipent.</p>
+<pre data-lang="el" style="background-color:#fcf0ca;color:#282828aa;" class="language-el "><code class="language-el" data-lang="el"><span>(</span><span style="color:#b57614;">setq</span><span> epa</span><span style="color:#b23c15;">-</span><span>pinentry</span><span style="color:#b23c15;">-</span><span>mode &#39;loopback  </span><span style="font-style:italic;color:#928374;">;; use emacs
+</span><span>      epa</span><span style="color:#b23c15;">-</span><span>file</span><span style="color:#b23c15;">-</span><span>encrypt</span><span style="color:#b23c15;">-</span><span style="color:#9d0006;">to </span><span style="color:#79740e;">&quot;self@keshab.net&quot; </span><span style="font-style:italic;color:#928374;">;; encryption recipent
+</span><span>      epa</span><span style="color:#b23c15;">-</span><span>file</span><span style="color:#b23c15;">-</span><span>select</span><span style="color:#b23c15;">-</span><span>keys </span><span style="color:#79740e;">&quot;self@keshab.net&quot; </span><span style="font-style:italic;color:#928374;">;; encryption key
+</span><span>      )
+</span></code></pre>
+<h3 id="using-signing-keys-to-sign-git-commits">Using signing keys to sign git commits</h3>
+<p>Get long key ID</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg -K --keyid-format</span><span style="color:#b23c15;">=</span><span style="color:#282828;">long
+</span></code></pre>
+<p>Configure git to use this for signing, go to the git repo and run.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">git config user.signingkey </span><span style="color:#b23c15;">&lt;</span><span style="color:#282828;">LONG-KEY-ID</span><span style="color:#b23c15;">&gt;
+</span></code></pre>
+<p>The long key ID is of the signing subkey. Remember to not use your
+master key.</p>
+<p>Use <code>--global</code> flag to make this apply to all repos.</p>
+<h4 id="let-zsh-know-about-gpg">Let zsh know about GPG</h4>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#9d0006;">if </span><span style="color:#b57614;">[ </span><span style="color:#282828;">-r ~/.zshrc </span><span style="color:#b57614;">]</span><span style="color:#b23c15;">; </span><span style="color:#9d0006;">then </span><span style="color:#b57614;">echo </span><span style="color:#79740e;">&#39;export GPG_TTY=$(tty)&#39; </span><span style="color:#b23c15;">&gt;&gt; </span><span style="color:#282828;">~/.zshrc</span><span style="color:#b23c15;">; </span><span>\
+</span><span style="color:#9d0006;">else </span><span style="color:#b57614;">echo </span><span style="color:#79740e;">&#39;export GPG_TTY=$(tty)&#39; </span><span style="color:#b23c15;">&gt;&gt; </span><span style="color:#282828;">~/.zprofile</span><span style="color:#b23c15;">; </span><span style="color:#9d0006;">fi
+</span></code></pre>
+<h4 id="install-pinentry-mac-for-password-inputs">Install pinentry-mac for password inputs</h4>
+<p>This doesn't seem necessary when using Emacs for pin entry but is
+needed if creating signed commits from the command line.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">brew install pinentry-mac
+</span><span style="color:#b57614;">echo </span><span style="color:#79740e;">&quot;pinentry-program $(</span><span style="color:#282828;">which pinentry-mac</span><span style="color:#79740e;">)&quot; </span><span style="color:#b23c15;">&gt;&gt; </span><span style="color:#282828;">~/.gnupg/gpg-agent.conf
+</span><span style="color:#282828;">killall gpg-agent
+</span></code></pre>
+<p>:results:
+nil:END:</p>
+<h4 id="sign-commits">Sign commits</h4>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">git commit -S -m </span><span style="color:#79740e;">&quot;something&quot;
+</span></code></pre>
+<p>and to autosign all future commits, run:</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">git config commit.gpgsign true
+</span></code></pre>
+<h4 id="add-it-to-github-gitlab">Add it to github/gitlab</h4>
+<p>Export the key as ASCII armor format</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpg --armor --export </span><span style="color:#b23c15;">&lt;</span><span style="color:#282828;">KEY-ID</span><span style="color:#b23c15;">&gt;
+</span></code></pre>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>2023-04-03 I received this error when trying to do a <code>git commit</code>. My
+key wasn't expired though, which I verified by running the key listing
+command.</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>error: gpg failed to sign the data
+</span><span>fatal: failed to write commit object
+</span></code></pre>
+<p>I tried committing with GIT_TRACE=1 environment variable.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">GIT_TRACE</span><span style="color:#b23c15;">=</span><span style="color:#79740e;">1 </span><span style="color:#282828;">git commit
+</span></code></pre>
+<p>Which printed the failing <code>gpg</code> command.</p>
+<pre data-lang="txt" style="background-color:#fcf0ca;color:#282828aa;" class="language-txt "><code class="language-txt" data-lang="txt"><span>gpg --status-fd=2 -bsau &lt;key-id&gt;
+</span></code></pre>
+<p>Running this command didn't throw any error though.</p>
+<p>I'd just logged out and logged in onto the machine, maybe that broke something? I then killed gpg-agent on a whim.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">gpgconf --kill gpg-agent
+</span></code></pre>
+<p>Now it's working. Not sure what was up.</p>
+<p>2023-11-24 Saving .gpg files would hang in Emacs. Found <a rel="noopener" target="_blank" href="https://stackoverflow.com/q/76388376">this
+question</a> in stackoverflow that
+suggests downgrading the <code>gpg</code> package.</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">brew uninstall --ignore-dependencies gpg
+</span></code></pre>
+<p>and then</p>
+<pre data-lang="sh" style="background-color:#fcf0ca;color:#282828aa;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#282828;">brew install gnupg@2.2
+</span></code></pre>
+<h2 id="links">Links</h2>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://mikeross.xyz/create-gpg-key-pair-with-subkeys/">https://mikeross.xyz/create-gpg-key-pair-with-subkeys/</a></li>
+<li><a rel="noopener" target="_blank" href="https://mikeross.xyz/how-to-sign-git-commits-with-gpg-key/">https://mikeross.xyz/how-to-sign-git-commits-with-gpg-key/</a></li>
+<li><a rel="noopener" target="_blank" href="https://gist.github.com/paolocarrasco/18ca8fe6e63490ae1be23e84a7039374">How to understand the `gpg failed to sign the data` problem in git</a> by paolocarrasco</li>
+</ul>
+
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://keshp.com/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://keshp.com/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://keshp.com/js.js" defer></script>
+
+</body>
+</html>

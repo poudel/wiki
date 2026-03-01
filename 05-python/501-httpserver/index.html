@@ -1,0 +1,739 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://keshp.com/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> thoughts in progress | HTTP Server </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <h1><a href="https:&#x2F;&#x2F;keshp.com">thoughts in progress</a></h1>
+            <div>
+                <small>it&#x27;s not even a proper wiki</small>
+            </div>
+            <br>
+
+            <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                <input class="tree-toggle" type="checkbox" id="python"
+                           checked/>
+                    <label class="tree-toggle-label"
+                           for="python">Python</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/05-python/100-fav-python-talks/">Favorite Python Talks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/10-py-environments/">Python environments</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/300-py-bookmarks/">Python Bookmarks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/400-dynamic-serializers-drf/">Dynamic serializers in DRF</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/401-django-side-projects/">Starting side projects with Django</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/402-django-ksuid-field/">Django KSUID field</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/500-simple-scraper/">Generic scraper in Python</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="https://keshp.com/05-python/501-httpserver/">HTTP Server</a>
+                            </li>
+
+                            
+                                    
+                                    
+                                        <li >
+                                <a href="https://keshp.com/05-python/700-click/">Click</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="emacs"
+                           />
+                    <label class="tree-toggle-label"
+                           for="emacs">Emacs</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/15-emacs/10-using-emacs-plus/">Emacs Plus</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/200-dwim-shell-commands/">DWIM shell command</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/201-magit-forge/">Magit Forge</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/202-refactoring/">Config refactoring</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="snippets"
+                           />
+                    <label class="tree-toggle-label"
+                           for="snippets">Snippets</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/20-snippets/new-entry-helper/">Automating creating new entries</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/tailing-logs/">tailing logs</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/inkpalm/">InkPalm 5 mini e-reader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/cleaning-lelit-elizabeth/">Cleaning Lelit Elizabeth</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/slack-org-capture/">org slack messages</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/files-are-mess/">dorotac on filesystems</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/dms-again/">Document management, again</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/pycharm-docker-interpreter/">Pycharm not finding Docker interpreter</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/magit-find-file/">magit-find-file</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/go-unique-package/">Go unique package</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/quest-document-management/">Document management</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/thinkpad-homelab/">ThinkPad T470 for Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/discovering-hyperbole/">Discovering Hyperbole</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/using-minions-el/">Replacing rich-minority with minions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/emacs-for-python/">Back to using Emacs for Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/everything-inside-dotfiles/">Keeping everything inside ~&#x2F;dotfiles directory</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/linux-laptop/">Linux laptop to play with</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/git-subtree-experiments/">Experiments with git-subtree</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="postgresql"
+                           />
+                    <label class="tree-toggle-label"
+                           for="postgresql">PostgreSQL</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/40-postgres/01-general/">Misc Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/100-upgrade-postgres/">Upgrade Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/200-saving-history/">Saving history</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="whatever"
+                           />
+                    <label class="tree-toggle-label"
+                           for="whatever">Whatever</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/50-whatever/20-homelab/">Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/21-ssh/">SSH</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/30-docker/">Docker</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/150-i-might-need-these/">I might need these</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/151-plugin-rust/">Plugin system for rust projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/200-thoughts-on-side-projects/">Thoughts on side projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/201-rules-dsl/">[WIP] SaaS DSL</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/300-this-website/">This website</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/400-berlin/">Berlin</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="macos"
+                           />
+                    <label class="tree-toggle-label"
+                           for="macos">MacOS</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/60-macos/100-gpg-macos/">GPG on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/101-nix-macos/">Trying Nix on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/102-sloth-app/">Sloth app</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/103-aerospace/">Aerospace</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="food"
+                           />
+                    <label class="tree-toggle-label"
+                           for="food">Food</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/150-food/1-plum-torte/">Plum torte</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/150-food/2-pizza/">Plum torte</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="coding-exercises"
+                           />
+                    <label class="tree-toggle-label"
+                           for="coding-exercises">Coding Exercises</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/10-protohackers/">Protohackers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/11-golang-exercises/">Golang exercises</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/50-project-ideas/">Project ideas</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/100-aoc-2020-day-1/">AoC 2020, Day 1</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/101-aoc-2020-day-2/">AoC 2020, Day 2</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/102-aoc-2020-day-3/">AoC 2020, Day 3</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+
+        <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        <div id="wrap">
+            
+    <h2>HTTP Server</h2>
+        <p>I wanted to see how difficult it would be to implement
+a simple HTTP/1.0 server. I've come accross <a rel="noopener" target="_blank" href="https://www.rfc-editor.org/rfc/rfc1945.html">rfc1945</a>
+in the past, but never actually read it properly.</p>
+<p>I am a self-taught programmer and lower level network
+programming is something I've not had much experience with.
+I did get my feet wet last year with the <a rel="noopener" target="_blank" href="https://github.com/poudel/protohacke-rs">protohackers</a>
+network challenges, but there's a lot I don't know about.</p>
+<p>My goal was to avoid reading any tutorials, and just work
+off of the RFC and the socket library. There's nothing wrong
+with following tutorials, I just wanted to challenge myself.</p>
+<p>Here's what I ended up with after a couple of hours.</p>
+<details>
+    <summary>http.py</summary>
+    <pre data-lang="python" style="background-color:#fcf0ca;color:#282828aa;" class="language-python "><code class="language-python" data-lang="python"><span style="font-style:italic;color:#928374;">#!/usr/bin/env python
+</span><span>
+</span><span style="font-style:italic;color:#928374;"># HTTP/1.0 implementation from RFC1945
+</span><span style="font-style:italic;color:#928374;"># https://datatracker.ietf.org/doc/html/rfc1945
+</span><span>
+</span><span style="color:#9d0006;">import </span><span>dataclasses
+</span><span style="color:#9d0006;">import </span><span>socket
+</span><span style="color:#9d0006;">from </span><span>datetime </span><span style="color:#9d0006;">import </span><span>datetime
+</span><span>
+</span><span>
+</span><span>@dataclasses.</span><span style="color:#282828;">dataclass
+</span><span style="color:#9d0006;">class </span><span style="color:#407959;">Request</span><span>:
+</span><span>    method: </span><span style="color:#b57614;">str
+</span><span>    path: </span><span style="color:#b57614;">str
+</span><span>    protocol: </span><span style="color:#b57614;">str
+</span><span>    headers: </span><span style="color:#b57614;">dict</span><span>[</span><span style="color:#b57614;">str</span><span>, </span><span style="color:#b57614;">str</span><span>]
+</span><span>    body: </span><span style="color:#b57614;">str
+</span><span>
+</span><span>    @</span><span style="color:#b57614;">property
+</span><span>    </span><span style="color:#9d0006;">def </span><span style="color:#407959;">uri</span><span>(</span><span style="color:#282828;">self</span><span>) -&gt; </span><span style="color:#b57614;">str</span><span>:
+</span><span>        </span><span style="color:#9d0006;">return </span><span style="color:#79740e;">&quot;http://&quot; </span><span style="color:#b23c15;">+ </span><span style="color:#282828;">self</span><span>.headers[</span><span style="color:#79740e;">&quot;HOST&quot;</span><span>] </span><span style="color:#b23c15;">+ </span><span style="color:#282828;">self</span><span>.path
+</span><span>
+</span><span>    @</span><span style="color:#b57614;">classmethod
+</span><span>    </span><span style="color:#9d0006;">def </span><span style="color:#407959;">make</span><span>(</span><span style="color:#282828;">cls</span><span>, </span><span style="color:#282828;">raw</span><span>: </span><span style="color:#b57614;">bytes</span><span>) -&gt; </span><span style="color:#79740e;">&quot;Request&quot;</span><span>:
+</span><span>        decoded </span><span style="color:#b23c15;">= </span><span style="color:#282828;">raw.decode()
+</span><span>        </span><span style="font-style:italic;color:#928374;"># todo: validate line
+</span><span>        headers </span><span style="color:#b23c15;">= </span><span>{}
+</span><span>        body </span><span style="color:#b23c15;">= </span><span style="color:#8f3f71;">None
+</span><span>
+</span><span>        splitted </span><span style="color:#b23c15;">= </span><span style="color:#282828;">decoded.split(</span><span style="color:#79740e;">&quot;\n&quot;</span><span style="color:#282828;">)
+</span><span>
+</span><span>        </span><span style="font-style:italic;color:#928374;"># todo: validate
+</span><span>        method, path, protocol </span><span style="color:#b23c15;">= </span><span>splitted[</span><span style="color:#8f3f71;">0</span><span>]</span><span style="color:#282828;">.strip().split(</span><span style="color:#79740e;">&quot; &quot;</span><span style="color:#282828;">)
+</span><span>
+</span><span>        headers_done </span><span style="color:#b23c15;">= </span><span style="color:#8f3f71;">False
+</span><span>        done </span><span style="color:#b23c15;">= </span><span style="color:#8f3f71;">False
+</span><span>
+</span><span>        </span><span style="color:#9d0006;">for </span><span>item </span><span style="color:#9d0006;">in </span><span>splitted[</span><span style="color:#8f3f71;">1</span><span>:]:
+</span><span>            </span><span style="color:#9d0006;">if </span><span>item </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;&quot; </span><span style="color:#b23c15;">and </span><span>headers_done </span><span style="color:#b23c15;">is </span><span style="color:#8f3f71;">False</span><span>:
+</span><span>                headers_done </span><span style="color:#b23c15;">= </span><span style="color:#8f3f71;">True
+</span><span>                body </span><span style="color:#b23c15;">= </span><span>item
+</span><span>            </span><span style="color:#9d0006;">elif </span><span>item </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;&quot; </span><span style="color:#b23c15;">and </span><span>done </span><span style="color:#b23c15;">is </span><span style="color:#8f3f71;">False</span><span>:
+</span><span>                done </span><span style="color:#b23c15;">= </span><span style="color:#8f3f71;">True
+</span><span>            </span><span style="color:#9d0006;">else</span><span>:
+</span><span>                splitted_headers </span><span style="color:#b23c15;">= </span><span style="color:#282828;">item.split(</span><span style="color:#79740e;">&quot;:&quot;</span><span style="color:#282828;">)
+</span><span>                </span><span style="color:#9d0006;">if </span><span style="color:#b57614;">len</span><span style="color:#282828;">(splitted_headers) </span><span style="color:#b23c15;">&lt; </span><span style="color:#8f3f71;">2</span><span>:
+</span><span>                    </span><span style="color:#b57614;">print</span><span style="color:#282828;">(</span><span style="color:#79740e;">&quot;NOOOO&quot;</span><span style="color:#282828;">, splitted_headers)
+</span><span>                    </span><span style="color:#9d0006;">continue
+</span><span>
+</span><span>                key, </span><span style="color:#b23c15;">*</span><span>value </span><span style="color:#b23c15;">= </span><span>splitted_headers
+</span><span>                headers[</span><span style="color:#282828;">key.upper()</span><span>] </span><span style="color:#b23c15;">= </span><span style="color:#79740e;">&quot;:&quot;</span><span style="color:#282828;">.join(value).strip()
+</span><span>
+</span><span>        </span><span style="color:#9d0006;">return </span><span style="color:#282828;">cls(
+</span><span style="color:#282828;">            method</span><span style="color:#b23c15;">=</span><span style="color:#282828;">method, 
+</span><span style="color:#282828;">            path</span><span style="color:#b23c15;">=</span><span style="color:#282828;">path, 
+</span><span style="color:#282828;">            protocol</span><span style="color:#b23c15;">=</span><span style="color:#282828;">protocol, 
+</span><span style="color:#282828;">            headers</span><span style="color:#b23c15;">=</span><span style="color:#282828;">headers, 
+</span><span style="color:#282828;">            body</span><span style="color:#b23c15;">=</span><span style="color:#282828;">body
+</span><span style="color:#282828;">        )
+</span><span>
+</span><span>@dataclasses.</span><span style="color:#282828;">dataclass
+</span><span style="color:#9d0006;">class </span><span style="color:#407959;">Response</span><span>:
+</span><span>    request: Request
+</span><span>    status: </span><span style="color:#b57614;">int
+</span><span>    headers: </span><span style="color:#b57614;">dict</span><span>[</span><span style="color:#b57614;">str</span><span>, </span><span style="color:#b57614;">str</span><span>]
+</span><span>    body: </span><span style="color:#b57614;">bytes
+</span><span>
+</span><span>    @</span><span style="color:#b57614;">classmethod
+</span><span>    </span><span style="color:#9d0006;">def </span><span style="color:#407959;">make</span><span>(</span><span style="color:#282828;">cls</span><span>, </span><span style="color:#282828;">request</span><span>: Request, </span><span style="color:#282828;">status</span><span>: </span><span style="color:#b57614;">int</span><span>,  </span><span style="color:#282828;">body</span><span>: </span><span style="color:#b57614;">bytes </span><span style="color:#b23c15;">| </span><span style="color:#8f3f71;">None</span><span>, </span><span style="color:#b23c15;">**</span><span style="color:#282828;">headers</span><span>) -&gt; </span><span style="color:#79740e;">&quot;Response&quot;</span><span>:
+</span><span>        </span><span style="font-style:italic;color:#928374;"># Date: Tue, 15 Nov 1994 08:12:31 GMT
+</span><span>        datefmt </span><span style="color:#b23c15;">= </span><span style="color:#79740e;">&quot;</span><span style="color:#282828;">%a</span><span style="color:#79740e;">, </span><span style="color:#282828;">%d %b %Y %H</span><span style="color:#79740e;">:</span><span style="color:#282828;">%M</span><span style="color:#79740e;">:</span><span style="color:#282828;">%S</span><span style="color:#79740e;"> GMT&quot;
+</span><span>        datestr </span><span style="color:#b23c15;">= </span><span style="color:#282828;">datetime.now().strftime(datefmt)
+</span><span>
+</span><span>        </span><span style="color:#282828;">headers.update({
+</span><span style="color:#282828;">            </span><span style="color:#79740e;">&quot;Location&quot;</span><span style="color:#282828;">: request.uri,
+</span><span style="color:#282828;">            </span><span style="color:#79740e;">&quot;Server&quot;</span><span style="color:#282828;">: </span><span style="color:#79740e;">&quot;keshab/0.1&quot;</span><span style="color:#282828;">,
+</span><span style="color:#282828;">            </span><span style="color:#79740e;">&quot;Allow&quot;</span><span style="color:#282828;">: </span><span style="color:#79740e;">&quot;GET&quot;</span><span style="color:#282828;">,
+</span><span style="color:#282828;">            </span><span style="color:#79740e;">&quot;Content-Type&quot;</span><span style="color:#282828;">: </span><span style="color:#79740e;">&quot;text/html&quot;</span><span style="color:#282828;">,
+</span><span style="color:#282828;">            </span><span style="color:#79740e;">&quot;Content-Length&quot;</span><span style="color:#282828;">: </span><span style="color:#b57614;">len</span><span style="color:#282828;">(body),
+</span><span style="color:#282828;">            </span><span style="color:#79740e;">&quot;Date&quot;</span><span style="color:#282828;">: datestr,
+</span><span style="color:#282828;">            </span><span style="color:#79740e;">&quot;Last-Modified&quot;</span><span style="color:#282828;">: datestr
+</span><span style="color:#282828;">        })
+</span><span>        </span><span style="color:#9d0006;">return </span><span style="color:#282828;">Response(request</span><span style="color:#b23c15;">=</span><span style="color:#282828;">request, status</span><span style="color:#b23c15;">=</span><span style="color:#282828;">status, headers</span><span style="color:#b23c15;">=</span><span style="color:#282828;">headers, body</span><span style="color:#b23c15;">=</span><span style="color:#282828;">body)
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">def </span><span style="color:#407959;">encode</span><span>(</span><span style="color:#282828;">self</span><span>):
+</span><span>        headerstr </span><span style="color:#b23c15;">= </span><span style="color:#79740e;">&quot;\n&quot;</span><span style="color:#282828;">.join([
+</span><span style="color:#282828;">            </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;</span><span style="color:#282828;">{key}</span><span style="color:#79740e;">: </span><span style="color:#282828;">{value}</span><span style="color:#79740e;">&quot; </span><span style="color:#9d0006;">for </span><span style="color:#282828;">key, value </span><span style="color:#9d0006;">in </span><span style="color:#282828;">self.headers.items()
+</span><span style="color:#282828;">        ])
+</span><span>        resp </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;</span><span>{</span><span style="color:#282828;">self.request.protocol</span><span>} {</span><span style="color:#282828;">self.status</span><span>}</span><span style="color:#79740e;">\n</span><span>{</span><span style="color:#282828;">headerstr</span><span>}</span><span style="color:#79740e;">\n&quot;
+</span><span>        </span><span style="color:#9d0006;">return </span><span style="color:#282828;">resp.encode() </span><span style="color:#b23c15;">+ </span><span style="color:#282828;">self</span><span>.body
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">def </span><span style="color:#407959;">handle_request</span><span>(</span><span style="color:#282828;">data</span><span>: </span><span style="color:#b57614;">bytes</span><span>) -&gt; Response:
+</span><span>    </span><span style="color:#b57614;">print</span><span style="color:#282828;">(</span><span style="color:#79740e;">&quot;\nSTART\n&quot;</span><span style="color:#282828;">, data.decode(), </span><span style="color:#79740e;">&quot;\nEND&quot;</span><span style="color:#282828;">)
+</span><span>    request </span><span style="color:#b23c15;">= </span><span style="color:#282828;">Request.make(data)
+</span><span>    datestr </span><span style="color:#b23c15;">= </span><span style="color:#282828;">datetime.now().isoformat()
+</span><span>
+</span><span>    response_body </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;&quot;&quot;
+</span><span style="color:#79740e;">&lt;html&gt;&lt;body&gt;
+</span><span style="color:#79740e;">    &lt;h1&gt;Hello world&lt;/h1&gt;
+</span><span style="color:#79740e;">    &lt;h2&gt;Now: </span><span>{</span><span style="color:#282828;">datestr</span><span>}</span><span style="color:#79740e;">&lt;/h2&gt;
+</span><span style="color:#79740e;">&lt;/body&gt;
+</span><span style="color:#79740e;">&lt;/html&gt;
+</span><span style="color:#79740e;">&quot;&quot;&quot;</span><span style="color:#282828;">.encode()
+</span><span>
+</span><span>    response </span><span style="color:#b23c15;">= </span><span style="color:#282828;">Response.make(
+</span><span style="color:#282828;">        request</span><span style="color:#b23c15;">=</span><span style="color:#282828;">request,
+</span><span style="color:#282828;">        status</span><span style="color:#b23c15;">=</span><span style="color:#8f3f71;">200</span><span style="color:#282828;">,
+</span><span style="color:#282828;">        body</span><span style="color:#b23c15;">=</span><span style="color:#282828;">response_body,
+</span><span style="color:#282828;">    )
+</span><span>    </span><span style="color:#9d0006;">return </span><span>response
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">def </span><span style="color:#407959;">runserver</span><span>(</span><span style="color:#282828;">host</span><span>: </span><span style="color:#b57614;">str</span><span>, </span><span style="color:#282828;">port</span><span>: </span><span style="color:#b57614;">int</span><span>):
+</span><span>    s </span><span style="color:#b23c15;">= </span><span style="color:#282828;">socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+</span><span>    </span><span style="color:#282828;">s.bind((host, port))
+</span><span>    </span><span style="color:#b57614;">print</span><span style="color:#282828;">(</span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Listening at http://</span><span style="color:#282828;">{host}</span><span style="color:#79740e;">:</span><span style="color:#282828;">{port}</span><span style="color:#79740e;">&quot;</span><span style="color:#282828;">)
+</span><span>
+</span><span>    </span><span style="color:#282828;">s.listen(</span><span style="color:#8f3f71;">1</span><span style="color:#282828;">)
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">while </span><span style="color:#8f3f71;">True</span><span>:
+</span><span>        conn, addr </span><span style="color:#b23c15;">= </span><span style="color:#282828;">s.accept()
+</span><span>
+</span><span>        </span><span style="color:#9d0006;">while </span><span style="color:#8f3f71;">True</span><span>:
+</span><span>            data </span><span style="color:#b23c15;">= </span><span style="color:#282828;">conn.recv(</span><span style="color:#8f3f71;">1024</span><span style="color:#282828;">)
+</span><span>            </span><span style="color:#9d0006;">if </span><span style="color:#b23c15;">not </span><span>data:
+</span><span>                </span><span style="color:#9d0006;">break
+</span><span>
+</span><span>            </span><span style="color:#9d0006;">try</span><span>:
+</span><span>                response </span><span style="color:#b23c15;">= </span><span style="color:#282828;">handle_request(data)
+</span><span>                encoded </span><span style="color:#b23c15;">= </span><span style="color:#282828;">response.encode()
+</span><span>                </span><span style="color:#282828;">conn.sendall(encoded)
+</span><span>            </span><span style="color:#9d0006;">except </span><span style="color:#b57614;">Exception </span><span style="color:#9d0006;">as </span><span>err:
+</span><span>                </span><span style="color:#b57614;">print</span><span style="color:#282828;">(</span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Error while handling request: </span><span style="color:#282828;">{err}</span><span style="color:#79740e;">&quot;</span><span style="color:#282828;">)
+</span><span>
+</span><span>            </span><span style="color:#9d0006;">break
+</span><span>
+</span><span>        </span><span style="color:#9d0006;">try</span><span>:
+</span><span>            </span><span style="color:#282828;">conn.close()
+</span><span>        </span><span style="color:#9d0006;">except </span><span style="color:#b57614;">Exception</span><span>:
+</span><span>            </span><span style="color:#9d0006;">pass
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">try</span><span>:
+</span><span>        </span><span style="color:#282828;">s.close()
+</span><span>    </span><span style="color:#9d0006;">except </span><span style="color:#b57614;">Exception</span><span>:
+</span><span>        </span><span style="color:#9d0006;">pass
+</span><span>
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">if </span><span style="color:#b57614;">__name__ </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;__main__&quot;</span><span>:
+</span><span>    </span><span style="color:#282828;">runserver(host</span><span style="color:#b23c15;">=</span><span style="color:#79740e;">&quot;127.0.0.1&quot;</span><span style="color:#282828;">, port</span><span style="color:#b23c15;">=</span><span style="color:#8f3f71;">6111</span><span style="color:#282828;">)
+</span><span>
+</span></code></pre>
+</details>
+<p>and running it is just</p>
+<pre data-lang="shell" style="background-color:#fcf0ca;color:#282828aa;" class="language-shell "><code class="language-shell" data-lang="shell"><span>./http.py
+</span></code></pre>
+<p>The RFC was actually really easy to follow. I didn't actually
+read everything though, and I was aware of the major concepts
+already. But I did learn about the <code>From</code> header for the
+first time.</p>
+<p>The code snippet above is too long for what it actually does.
+This same functionality could be compressed into a far fewer
+lines but I'm too lazy to refactor that now.</p>
+<p>I want to move onto handling multiple requests and use <code>asyncio</code>
+for an extra bit of challenge.</p>
+<h2 id="with-asyncio">with asyncio</h2>
+<p>The <code>asyncio</code> library seems slightly more <a rel="noopener" target="_blank" href="https://docs.python.org/3/library/asyncio-stream.html#tcp-echo-server-using-streams">ergonomic</a>
+compared to <code>socket</code>.</p>
+<details>
+    <summary>http2.py</summary>
+    <pre data-lang="python" style="background-color:#fcf0ca;color:#282828aa;" class="language-python "><code class="language-python" data-lang="python"><span style="font-style:italic;color:#928374;">#!/usr/bin/env python
+</span><span style="font-style:italic;color:#928374;"># https://datatracker.ietf.org/doc/html/rfc1945
+</span><span style="color:#9d0006;">import </span><span>socket
+</span><span style="color:#9d0006;">import </span><span>asyncio
+</span><span style="color:#9d0006;">import </span><span>socket
+</span><span style="color:#9d0006;">from </span><span>datetime </span><span style="color:#9d0006;">import </span><span>datetime
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">async def </span><span style="color:#407959;">handle_request</span><span>(</span><span style="color:#282828;">reader</span><span>, </span><span style="color:#282828;">writer</span><span>):
+</span><span>    data </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">await </span><span style="color:#282828;">reader.read(</span><span style="color:#8f3f71;">1024</span><span style="color:#282828;">)
+</span><span>    message </span><span style="color:#b23c15;">= </span><span style="color:#282828;">data.decode()
+</span><span>    addr </span><span style="color:#b23c15;">= </span><span style="color:#282828;">writer.get_extra_info(</span><span style="color:#79740e;">&quot;peername&quot;</span><span style="color:#282828;">)
+</span><span>
+</span><span>    datefmt </span><span style="color:#b23c15;">= </span><span style="color:#79740e;">&quot;</span><span style="color:#282828;">%a</span><span style="color:#79740e;">, </span><span style="color:#282828;">%d %b %Y %H</span><span style="color:#79740e;">:</span><span style="color:#282828;">%M</span><span style="color:#79740e;">:</span><span style="color:#282828;">%S</span><span style="color:#79740e;"> GMT&quot;
+</span><span>    datestr </span><span style="color:#b23c15;">= </span><span style="color:#282828;">datetime.now().strftime(datefmt)
+</span><span>
+</span><span>    body </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">b</span><span style="color:#79740e;">&quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;
+</span><span>    resp </span><span style="color:#b23c15;">= </span><span>(
+</span><span>        </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;HTTP/1.1 200 OK\n&quot;
+</span><span>        </span><span style="color:#79740e;">&quot;Location: http://localhost:6111/\n&quot;
+</span><span>        </span><span style="color:#79740e;">&quot;Server: keshab/0.2\n&quot;
+</span><span>        </span><span style="color:#79740e;">&quot;Allow: GET\n&quot;
+</span><span>        </span><span style="color:#79740e;">&quot;Content-Type: text/html\n&quot;
+</span><span>        </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Content-Length: </span><span>{</span><span style="color:#b57614;">len</span><span style="color:#282828;">(body)</span><span>}</span><span style="color:#79740e;">\n&quot;
+</span><span>        </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Date: </span><span>{</span><span style="color:#282828;">datestr</span><span>}</span><span style="color:#79740e;">\n&quot;
+</span><span>    )</span><span style="color:#282828;">.encode()
+</span><span>
+</span><span>    </span><span style="color:#282828;">writer.write(resp </span><span style="color:#b23c15;">+ </span><span style="color:#9d0006;">b</span><span style="color:#79740e;">&quot;\n&quot; </span><span style="color:#b23c15;">+ </span><span style="color:#282828;">body)
+</span><span>    </span><span style="color:#9d0006;">await </span><span style="color:#282828;">writer.drain()
+</span><span>
+</span><span>    </span><span style="color:#282828;">writer.close()
+</span><span>    </span><span style="color:#9d0006;">await </span><span style="color:#282828;">writer.wait_closed()
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">async def </span><span style="color:#407959;">runserver</span><span>():
+</span><span>    server </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">await </span><span style="color:#282828;">asyncio.start_server(
+</span><span style="color:#282828;">        handle_request,
+</span><span style="color:#282828;">        </span><span style="color:#79740e;">&quot;127.0.0.1&quot;</span><span style="color:#282828;">, 
+</span><span style="color:#282828;">        </span><span style="color:#8f3f71;">6111</span><span style="color:#282828;">,
+</span><span style="color:#282828;">        reuse_address</span><span style="color:#b23c15;">=</span><span style="color:#8f3f71;">True</span><span style="color:#282828;">,
+</span><span style="color:#282828;">        reuse_port</span><span style="color:#b23c15;">=</span><span style="color:#8f3f71;">True</span><span style="color:#282828;">,
+</span><span style="color:#282828;">    )
+</span><span>    </span><span style="color:#b57614;">print</span><span style="color:#282828;">(</span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Listening on 6111&quot;</span><span style="color:#282828;">)
+</span><span>    </span><span style="color:#9d0006;">async with </span><span>server:
+</span><span>        </span><span style="color:#9d0006;">await </span><span style="color:#282828;">server.serve_forever()
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">if </span><span style="color:#b57614;">__name__ </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;__main__&quot;</span><span>:
+</span><span>    </span><span style="color:#282828;">asyncio.run(runserver())
+</span></code></pre>
+</details>
+<h2 id="slightly-better-server">slightly better server</h2>
+<p>The server above, while useful as a toy example, is not really doing
+much. It also contains a major bug in the request parser, but that's
+a problem for now. I think asyncio might be a good way to implement
+a simple key and value database.</p>
+<details>
+    <summary>httpdb.py</summary>
+    <pre data-lang="python" style="background-color:#fcf0ca;color:#282828aa;" class="language-python "><code class="language-python" data-lang="python"><span style="font-style:italic;color:#928374;">#!/usr/bin/env python
+</span><span style="font-style:italic;color:#928374;"># https://datatracker.ietf.org/doc/html/rfc1945
+</span><span style="color:#9d0006;">import </span><span>json
+</span><span style="color:#9d0006;">import </span><span>socket
+</span><span style="color:#9d0006;">import </span><span>asyncio
+</span><span style="color:#9d0006;">import </span><span>socket
+</span><span style="color:#9d0006;">from </span><span>datetime </span><span style="color:#9d0006;">import </span><span>datetime
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">def </span><span style="color:#407959;">get_request</span><span>(</span><span style="color:#282828;">raw</span><span>: </span><span style="color:#b57614;">bytes</span><span>):
+</span><span>    </span><span style="font-style:italic;color:#928374;"># a pathetic way to parse request
+</span><span>    req </span><span style="color:#b23c15;">= </span><span>{</span><span style="color:#79740e;">&quot;headers&quot;</span><span>: {}, </span><span style="color:#79740e;">&quot;body&quot;</span><span>: </span><span style="color:#9d0006;">b</span><span style="color:#79740e;">&quot;&quot;</span><span>}
+</span><span>
+</span><span>    decoded </span><span style="color:#b23c15;">= </span><span style="color:#282828;">raw.decode()
+</span><span>    splitted </span><span style="color:#b23c15;">= </span><span style="color:#282828;">decoded.split(</span><span style="color:#79740e;">&quot;\r&quot;</span><span style="color:#282828;">)
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;"># todo: validate
+</span><span>    method, path, protocol </span><span style="color:#b23c15;">= </span><span>splitted[</span><span style="color:#8f3f71;">0</span><span>]</span><span style="color:#282828;">.strip().split(</span><span style="color:#79740e;">&quot; &quot;</span><span style="color:#282828;">)
+</span><span>    </span><span style="color:#282828;">req.update(method</span><span style="color:#b23c15;">=</span><span style="color:#282828;">method.upper(), path</span><span style="color:#b23c15;">=</span><span style="color:#282828;">path, protocol</span><span style="color:#b23c15;">=</span><span style="color:#282828;">protocol)
+</span><span>
+</span><span>    headers_done </span><span style="color:#b23c15;">= </span><span style="color:#8f3f71;">False
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">for </span><span>item </span><span style="color:#9d0006;">in </span><span>splitted[</span><span style="color:#8f3f71;">1</span><span>:]:
+</span><span>        </span><span style="color:#9d0006;">if </span><span>item </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;\n&quot; </span><span style="color:#b23c15;">and </span><span>headers_done </span><span style="color:#b23c15;">is </span><span style="color:#8f3f71;">False</span><span>:
+</span><span>            headers_done </span><span style="color:#b23c15;">= </span><span style="color:#8f3f71;">True
+</span><span>            </span><span style="color:#9d0006;">continue
+</span><span>
+</span><span>        </span><span style="color:#9d0006;">if </span><span>headers_done:
+</span><span>            req[</span><span style="color:#79740e;">&quot;body&quot;</span><span>] </span><span style="color:#b23c15;">+= </span><span style="color:#282828;">item.encode()
+</span><span>        </span><span style="color:#9d0006;">else</span><span>:
+</span><span>            items </span><span style="color:#b23c15;">= </span><span style="color:#282828;">item.strip().split(</span><span style="color:#79740e;">&quot;:&quot;</span><span style="color:#282828;">)
+</span><span>            </span><span style="color:#9d0006;">if </span><span style="color:#b57614;">len</span><span style="color:#282828;">(items) </span><span style="color:#b23c15;">&lt; </span><span style="color:#8f3f71;">2</span><span>:
+</span><span>                </span><span style="color:#9d0006;">continue
+</span><span>
+</span><span>            key, </span><span style="color:#b23c15;">*</span><span>value </span><span style="color:#b23c15;">= </span><span>items
+</span><span>            req[</span><span style="color:#79740e;">&quot;headers&quot;</span><span>][</span><span style="color:#282828;">key.upper()</span><span>] </span><span style="color:#b23c15;">= </span><span style="color:#79740e;">&quot;:&quot;</span><span style="color:#282828;">.join(value).strip()
+</span><span>    </span><span style="color:#9d0006;">return </span><span>req
+</span><span>
+</span><span>
+</span><span style="color:#282828;">DB </span><span style="color:#b23c15;">= </span><span>{
+</span><span>    </span><span style="color:#79740e;">&quot;/&quot;</span><span>: (</span><span style="color:#79740e;">&quot;text/text&quot;</span><span>, </span><span style="color:#9d0006;">b</span><span style="color:#79740e;">&quot;httpdb, keshab/0.3&quot;</span><span>),
+</span><span>}
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">async def </span><span style="color:#407959;">handle_post</span><span>(</span><span style="color:#282828;">req</span><span>, </span><span style="color:#282828;">reader</span><span>, </span><span style="color:#282828;">writer</span><span>):
+</span><span>    key </span><span style="color:#b23c15;">= </span><span>req[</span><span style="color:#79740e;">&quot;path&quot;</span><span>]
+</span><span>    </span><span style="color:#9d0006;">if </span><span>key </span><span style="color:#b23c15;">in </span><span style="color:#282828;">DB</span><span>:
+</span><span>        status </span><span style="color:#b23c15;">= </span><span style="color:#8f3f71;">200
+</span><span>    </span><span style="color:#9d0006;">else</span><span>:
+</span><span>        status </span><span style="color:#b23c15;">= </span><span style="color:#8f3f71;">201
+</span><span>
+</span><span>    ctype </span><span style="color:#b23c15;">= </span><span>req[</span><span style="color:#79740e;">&quot;headers&quot;</span><span>]</span><span style="color:#282828;">.get(</span><span style="color:#79740e;">&quot;CONTENT-TYPE&quot;</span><span style="color:#282828;">, </span><span style="color:#79740e;">&quot;text/text&quot;</span><span style="color:#282828;">)
+</span><span>    data </span><span style="color:#b23c15;">= </span><span>req[</span><span style="color:#79740e;">&quot;body&quot;</span><span>]
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">if </span><span>ctype </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;application/json&quot;</span><span>:
+</span><span>        </span><span style="color:#9d0006;">try</span><span>:
+</span><span>            data </span><span style="color:#b23c15;">= </span><span style="color:#282828;">json.loads(req[</span><span style="color:#79740e;">&quot;body&quot;</span><span style="color:#282828;">])
+</span><span>        </span><span style="color:#9d0006;">except </span><span style="color:#b57614;">Exception </span><span style="color:#9d0006;">as </span><span>err:
+</span><span>            </span><span style="color:#9d0006;">return </span><span style="color:#282828;">get_response(req, </span><span style="color:#8f3f71;">400</span><span style="color:#282828;">, </span><span style="color:#b57614;">str</span><span style="color:#282828;">(err).encode())
+</span><span>
+</span><span>    </span><span style="color:#282828;">DB</span><span>[key] </span><span style="color:#b23c15;">= </span><span>(ctype, data)
+</span><span>    </span><span style="color:#9d0006;">return </span><span style="color:#282828;">get_response(req, status, </span><span style="color:#9d0006;">b</span><span style="color:#79740e;">&quot;&quot;</span><span style="color:#282828;">)
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">async def </span><span style="color:#407959;">handle_get</span><span>(</span><span style="color:#282828;">req</span><span>, </span><span style="color:#282828;">reader</span><span>, </span><span style="color:#282828;">writer</span><span>):
+</span><span>    key </span><span style="color:#b23c15;">= </span><span>req[</span><span style="color:#79740e;">&quot;path&quot;</span><span>]
+</span><span>    </span><span style="color:#9d0006;">def </span><span style="color:#407959;">default</span><span>(</span><span style="color:#282828;">a</span><span>):
+</span><span>        </span><span style="color:#9d0006;">if </span><span style="color:#b57614;">isinstance</span><span style="color:#282828;">(a, </span><span style="color:#b57614;">bytes</span><span style="color:#282828;">)</span><span>:
+</span><span>            </span><span style="color:#9d0006;">return </span><span style="color:#282828;">a.decode()
+</span><span>        </span><span style="color:#9d0006;">return </span><span style="color:#b57614;">str</span><span style="color:#282828;">(a)
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">if </span><span>key </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;/_all&quot;</span><span>:
+</span><span>        everything </span><span style="color:#b23c15;">= </span><span style="color:#282828;">json.dumps(DB, default</span><span style="color:#b23c15;">=</span><span style="color:#282828;">default).encode()
+</span><span>        </span><span style="color:#9d0006;">return </span><span style="color:#282828;">get_response(req, </span><span style="color:#8f3f71;">200</span><span style="color:#282828;">, everything, </span><span style="color:#79740e;">&quot;application/json&quot;</span><span style="color:#282828;">)
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">if </span><span>key </span><span style="color:#b23c15;">not in </span><span style="color:#282828;">DB</span><span>:
+</span><span>        </span><span style="color:#9d0006;">return </span><span style="color:#282828;">get_response(req, </span><span style="color:#8f3f71;">404</span><span style="color:#282828;">, </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Key &#39;</span><span style="color:#282828;">{key}</span><span style="color:#79740e;">&#39; not found.&quot;</span><span style="color:#282828;">.encode())
+</span><span>    ctype, value </span><span style="color:#b23c15;">= </span><span style="color:#282828;">DB</span><span>[key]
+</span><span>    </span><span style="color:#9d0006;">if </span><span>ctype </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;application/json&quot;</span><span>:
+</span><span>        value </span><span style="color:#b23c15;">= </span><span style="color:#282828;">json.dumps(value).encode()
+</span><span>    </span><span style="color:#9d0006;">return </span><span style="color:#282828;">get_response(req, </span><span style="color:#8f3f71;">200</span><span style="color:#282828;">, value, ctype)
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">def </span><span style="color:#407959;">get_response</span><span>(</span><span style="color:#282828;">req</span><span>: </span><span style="color:#b57614;">dict</span><span>, </span><span style="color:#282828;">status</span><span>: </span><span style="color:#b57614;">int</span><span>, </span><span style="color:#282828;">body</span><span>: </span><span style="color:#b57614;">bytes </span><span style="color:#b23c15;">| </span><span style="color:#8f3f71;">None</span><span>, </span><span style="color:#282828;">content_type</span><span>: </span><span style="color:#b57614;">str</span><span style="color:#b23c15;">=</span><span style="color:#79740e;">&quot;text/text&quot;</span><span>) -&gt; </span><span style="color:#b57614;">bytes</span><span>:
+</span><span>    datefmt </span><span style="color:#b23c15;">= </span><span style="color:#79740e;">&quot;</span><span style="color:#282828;">%a</span><span style="color:#79740e;">, </span><span style="color:#282828;">%d %b %Y %H</span><span style="color:#79740e;">:</span><span style="color:#282828;">%M</span><span style="color:#79740e;">:</span><span style="color:#282828;">%S</span><span style="color:#79740e;"> GMT&quot;
+</span><span>    datestr </span><span style="color:#b23c15;">= </span><span style="color:#282828;">datetime.now().strftime(datefmt)
+</span><span>
+</span><span>    uri </span><span style="color:#b23c15;">= </span><span style="color:#79740e;">&quot;http&quot; </span><span style="color:#b23c15;">+ </span><span>req[</span><span style="color:#79740e;">&quot;headers&quot;</span><span>][</span><span style="color:#79740e;">&quot;HOST&quot;</span><span>] </span><span style="color:#b23c15;">+ </span><span>req[</span><span style="color:#79740e;">&quot;path&quot;</span><span>]
+</span><span>
+</span><span>    resp </span><span style="color:#b23c15;">= </span><span>(
+</span><span>        </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;HTTP/1.1 </span><span>{</span><span style="color:#282828;">status</span><span>}</span><span style="color:#79740e;">\n&quot;
+</span><span>        </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Location: </span><span>{</span><span style="color:#282828;">uri</span><span>}</span><span style="color:#79740e;">\n&quot;
+</span><span>        </span><span style="color:#79740e;">&quot;Server: keshab/0.3\n&quot;
+</span><span>        </span><span style="color:#79740e;">&quot;Allow: GET,POST\n&quot;
+</span><span>        </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Content-Type: </span><span>{</span><span style="color:#282828;">content_type</span><span>}</span><span style="color:#79740e;">\n&quot;
+</span><span>        </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Content-Length: </span><span>{</span><span style="color:#b57614;">len</span><span style="color:#282828;">(body)</span><span>}</span><span style="color:#79740e;">\n&quot;
+</span><span>        </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Date: </span><span>{</span><span style="color:#282828;">datestr</span><span>}</span><span style="color:#79740e;">\n&quot;
+</span><span>    )</span><span style="color:#282828;">.encode()
+</span><span>    </span><span style="color:#9d0006;">return </span><span>resp </span><span style="color:#b23c15;">+ </span><span style="color:#9d0006;">b</span><span style="color:#79740e;">&quot;\n&quot; </span><span style="color:#b23c15;">+ </span><span>body
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">async def </span><span style="color:#407959;">handle_request</span><span>(</span><span style="color:#282828;">reader</span><span>, </span><span style="color:#282828;">writer</span><span>):
+</span><span>    data </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">await </span><span style="color:#282828;">reader.read(</span><span style="color:#8f3f71;">1024</span><span style="color:#282828;">)
+</span><span>
+</span><span>    req </span><span style="color:#b23c15;">= </span><span style="color:#282828;">get_request(data)
+</span><span>
+</span><span>    protected </span><span style="color:#b23c15;">= </span><span>[</span><span style="color:#79740e;">&quot;/_all&quot;</span><span>]
+</span><span>    not_implemented </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Method </span><span>{</span><span style="color:#282828;">req[</span><span style="color:#79740e;">&#39;method&#39;</span><span style="color:#282828;">]</span><span>}</span><span style="color:#79740e;"> Not Implemented\n&quot;</span><span style="color:#282828;">.encode()
+</span><span>
+</span><span>    </span><span style="color:#9d0006;">if </span><span>req[</span><span style="color:#79740e;">&quot;method&quot;</span><span>] </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;GET&quot;</span><span>:
+</span><span>        resp </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">await </span><span style="color:#282828;">handle_get(req, reader, writer)
+</span><span>    </span><span style="color:#9d0006;">elif </span><span>req[</span><span style="color:#79740e;">&quot;method&quot;</span><span>] </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;POST&quot;</span><span>:
+</span><span>        </span><span style="color:#9d0006;">if </span><span>req[</span><span style="color:#79740e;">&quot;path&quot;</span><span>] </span><span style="color:#b23c15;">in </span><span>protected:
+</span><span>            resp </span><span style="color:#b23c15;">= </span><span style="color:#282828;">get_response(req, </span><span style="color:#8f3f71;">501</span><span style="color:#282828;">, not_implemented)
+</span><span>        </span><span style="color:#9d0006;">else</span><span>:
+</span><span>            resp </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">await </span><span style="color:#282828;">handle_post(req, reader, writer)
+</span><span>    </span><span style="color:#9d0006;">else</span><span>:
+</span><span>        resp </span><span style="color:#b23c15;">= </span><span style="color:#282828;">get_response(req, </span><span style="color:#8f3f71;">501</span><span style="color:#282828;">, not_implemented)
+</span><span>
+</span><span>    </span><span style="color:#282828;">writer.write(resp)
+</span><span>    </span><span style="color:#9d0006;">await </span><span style="color:#282828;">writer.drain()
+</span><span>
+</span><span>    </span><span style="color:#282828;">writer.close()
+</span><span>    </span><span style="color:#9d0006;">await </span><span style="color:#282828;">writer.wait_closed()
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">async def </span><span style="color:#407959;">runserver</span><span>():
+</span><span>    server </span><span style="color:#b23c15;">= </span><span style="color:#9d0006;">await </span><span style="color:#282828;">asyncio.start_server(
+</span><span style="color:#282828;">        handle_request,
+</span><span style="color:#282828;">        </span><span style="color:#79740e;">&quot;127.0.0.1&quot;</span><span style="color:#282828;">, 
+</span><span style="color:#282828;">        </span><span style="color:#8f3f71;">6111</span><span style="color:#282828;">,
+</span><span style="color:#282828;">        reuse_address</span><span style="color:#b23c15;">=</span><span style="color:#8f3f71;">True</span><span style="color:#282828;">,
+</span><span style="color:#282828;">        reuse_port</span><span style="color:#b23c15;">=</span><span style="color:#8f3f71;">True</span><span style="color:#282828;">,
+</span><span style="color:#282828;">    )
+</span><span>    </span><span style="color:#b57614;">print</span><span style="color:#282828;">(</span><span style="color:#9d0006;">f</span><span style="color:#79740e;">&quot;Listening on 6111&quot;</span><span style="color:#282828;">)
+</span><span>    </span><span style="color:#9d0006;">async with </span><span>server:
+</span><span>        </span><span style="color:#9d0006;">await </span><span style="color:#282828;">server.serve_forever()
+</span><span>
+</span><span>
+</span><span style="color:#9d0006;">if </span><span style="color:#b57614;">__name__ </span><span style="color:#b23c15;">== </span><span style="color:#79740e;">&quot;__main__&quot;</span><span>:
+</span><span>    </span><span style="color:#282828;">asyncio.run(runserver())
+</span></code></pre>
+</details>
+<p>As you can see, I went a bit too far with this one. I also added a
+little bit of extra spice with the json parser. This http based
+database server recognises the need to have a valid json so
+it parses it before storing.</p>
+<p>Save a simple key</p>
+<pre data-lang="text" style="background-color:#fcf0ca;color:#282828aa;" class="language-text "><code class="language-text" data-lang="text"><span>POST http://localhost:6111/hello
+</span><span>Content-Type: text/text
+</span><span>
+</span><span>K: A quick brown fox jumps over the lazy dog.
+</span></code></pre>
+<p>GET the value</p>
+<pre data-lang="text" style="background-color:#fcf0ca;color:#282828aa;" class="language-text "><code class="language-text" data-lang="text"><span>
+</span><span>GET http://localhost:6111/hello
+</span></code></pre>
+<p>Save a json string</p>
+<pre data-lang="text" style="background-color:#fcf0ca;color:#282828aa;" class="language-text "><code class="language-text" data-lang="text"><span>POST http://localhost:6111/json
+</span><span>Content-Type: application/json
+</span><span>
+</span><span>{&quot;hello&quot;: &quot;world&quot;}
+</span></code></pre>
+<p>and get it back</p>
+<pre data-lang="text" style="background-color:#fcf0ca;color:#282828aa;" class="language-text "><code class="language-text" data-lang="text"><span>GET http://localhost:6111/json
+</span></code></pre>
+
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://keshp.com/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://keshp.com/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://keshp.com/js.js" defer></script>
+
+</body>
+</html>

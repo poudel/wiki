@@ -1,0 +1,666 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://keshp.com/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> thoughts in progress | Config refactoring </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <h1><a href="https:&#x2F;&#x2F;keshp.com">thoughts in progress</a></h1>
+            <div>
+                <small>it&#x27;s not even a proper wiki</small>
+            </div>
+            <br>
+
+            <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                <input class="tree-toggle" type="checkbox" id="python"
+                           />
+                    <label class="tree-toggle-label"
+                           for="python">Python</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/05-python/100-fav-python-talks/">Favorite Python Talks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/10-py-environments/">Python environments</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/300-py-bookmarks/">Python Bookmarks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/400-dynamic-serializers-drf/">Dynamic serializers in DRF</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/401-django-side-projects/">Starting side projects with Django</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/402-django-ksuid-field/">Django KSUID field</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/500-simple-scraper/">Generic scraper in Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/501-httpserver/">HTTP Server</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/700-click/">Click</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="emacs"
+                           checked/>
+                    <label class="tree-toggle-label"
+                           for="emacs">Emacs</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/15-emacs/10-using-emacs-plus/">Emacs Plus</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/200-dwim-shell-commands/">DWIM shell command</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/201-magit-forge/">Magit Forge</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="https://keshp.com/15-emacs/202-refactoring/">Config refactoring</a>
+                            </li>
+
+                            
+                                    
+                                    
+                                        <ul id="toc">
+                                            <li><a href="
+                                                        https://keshp.com/15-emacs/202-refactoring/#changes">Changes</a>
+                                                    <ul>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#disable-flycheck">Disable flycheck</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-smartparens">Remove smartparens</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-yafolding">Remove yafolding</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-multiple-cursors">Remove multiple cursors</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-projectile-and-consult-projectile">Remove projectile and consult-projectile</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-easy-kill">remove easy-kill</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-which-key">remove which-key</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-dwim-shell-command">remove dwim-shell-command</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#disable-git-gutter">disable git-gutter</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-forge-magit">remove forge (magit)</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-eglot">remove eglot</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-dash-for-docs">remove dash for docs</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-treemacs">remove treemacs</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#habit-switching-windows">habit: switching windows</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-htmlize">Remove htmlize</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-semantic">Remove semantic</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#spell-checking">Spell checking</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#remove-undo-tree">Remove undo-tree</a>
+                                                                </li>
+                                                            </ul>
+                                                    </li>
+                                            <li><a href="
+                                                        https://keshp.com/15-emacs/202-refactoring/#for-later">For later</a>
+                                                    <ul>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#detached-retry">detached retry</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#undo-tree-vs-vundo">undo-tree vs vundo</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/15-emacs/202-refactoring/#the-rest">the rest</a>
+                                                                </li>
+                                                            </ul>
+                                                    </li>
+                                            </ul>
+                                    </ul>
+                <input class="tree-toggle" type="checkbox" id="snippets"
+                           />
+                    <label class="tree-toggle-label"
+                           for="snippets">Snippets</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/20-snippets/new-entry-helper/">Automating creating new entries</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/tailing-logs/">tailing logs</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/inkpalm/">InkPalm 5 mini e-reader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/cleaning-lelit-elizabeth/">Cleaning Lelit Elizabeth</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/slack-org-capture/">org slack messages</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/files-are-mess/">dorotac on filesystems</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/dms-again/">Document management, again</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/pycharm-docker-interpreter/">Pycharm not finding Docker interpreter</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/magit-find-file/">magit-find-file</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/go-unique-package/">Go unique package</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/quest-document-management/">Document management</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/thinkpad-homelab/">ThinkPad T470 for Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/discovering-hyperbole/">Discovering Hyperbole</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/using-minions-el/">Replacing rich-minority with minions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/emacs-for-python/">Back to using Emacs for Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/everything-inside-dotfiles/">Keeping everything inside ~&#x2F;dotfiles directory</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/linux-laptop/">Linux laptop to play with</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/git-subtree-experiments/">Experiments with git-subtree</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="postgresql"
+                           />
+                    <label class="tree-toggle-label"
+                           for="postgresql">PostgreSQL</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/40-postgres/01-general/">Misc Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/100-upgrade-postgres/">Upgrade Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/200-saving-history/">Saving history</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="whatever"
+                           />
+                    <label class="tree-toggle-label"
+                           for="whatever">Whatever</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/50-whatever/20-homelab/">Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/21-ssh/">SSH</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/30-docker/">Docker</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/150-i-might-need-these/">I might need these</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/151-plugin-rust/">Plugin system for rust projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/200-thoughts-on-side-projects/">Thoughts on side projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/201-rules-dsl/">[WIP] SaaS DSL</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/300-this-website/">This website</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/400-berlin/">Berlin</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="macos"
+                           />
+                    <label class="tree-toggle-label"
+                           for="macos">MacOS</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/60-macos/100-gpg-macos/">GPG on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/101-nix-macos/">Trying Nix on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/102-sloth-app/">Sloth app</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/103-aerospace/">Aerospace</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="food"
+                           />
+                    <label class="tree-toggle-label"
+                           for="food">Food</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/150-food/1-plum-torte/">Plum torte</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/150-food/2-pizza/">Plum torte</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="coding-exercises"
+                           />
+                    <label class="tree-toggle-label"
+                           for="coding-exercises">Coding Exercises</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/10-protohackers/">Protohackers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/11-golang-exercises/">Golang exercises</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/50-project-ideas/">Project ideas</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/100-aoc-2020-day-1/">AoC 2020, Day 1</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/101-aoc-2020-day-2/">AoC 2020, Day 2</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/102-aoc-2020-day-3/">AoC 2020, Day 3</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+
+        <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        <div id="wrap">
+            
+    <h2>Config refactoring</h2>
+        <p>Over the years, I've grown my config into a respectable
+size. It used to be public on github but I've made it private
+now.</p>
+<p>The config is a big <code>.org</code> file that I've come to love and hate
+at the same time. It's time I refactor it, disable and remove
+packages that I have no use for. I also want to develop
+better habits but that's for another time.</p>
+<h1 id="changes">Changes</h1>
+<h2 id="disable-flycheck">Disable flycheck</h2>
+<p>Disabling it because I am not doing a lot of coding in Emacs
+right now. Using Pycharm and Goland. Might enable it later though.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> flycheck
+</span><span>  :hook
+</span><span>  ((go</span><span style="color:#b23c15;">-</span><span>mode . flycheck</span><span style="color:#b23c15;">-</span><span>mode)
+</span><span>   (js2</span><span style="color:#b23c15;">-</span><span>mode . flycheck</span><span style="color:#b23c15;">-</span><span>mode)
+</span><span>   (yaml</span><span style="color:#b23c15;">-</span><span>mode . flycheck</span><span style="color:#b23c15;">-</span><span>mode)))
+</span></code></pre>
+<h2 id="remove-smartparens">Remove smartparens</h2>
+<p>I used to use <code>C-c s a</code> and <code>C-c s e</code>. But that feels like an eternity ago.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> smartparens
+</span><span>  :hook
+</span><span>  ((</span><span style="color:#9d0006;">prog</span><span style="color:#b23c15;">-</span><span>mode . smartparens</span><span style="color:#b23c15;">-</span><span>mode)
+</span><span>	 (markdown</span><span style="color:#b23c15;">-</span><span>mode . smartparens</span><span style="color:#b23c15;">-</span><span>mode))
+</span><span>  :config
+</span><span>  (sp</span><span style="color:#b23c15;">-</span><span>local</span><span style="color:#b23c15;">-</span><span>pair &#39;web</span><span style="color:#b23c15;">-</span><span>mode </span><span style="color:#79740e;">&quot;{&quot; &quot;}&quot;</span><span> :actions </span><span style="color:#8f3f71;">nil</span><span>)
+</span><span>  :bind
+</span><span>  ((</span><span style="color:#79740e;">&quot;C-c s a&quot;</span><span> . sp</span><span style="color:#b23c15;">-</span><span>beginning</span><span style="color:#b23c15;">-</span><span>of</span><span style="color:#b23c15;">-</span><span>sexp)
+</span><span>   (</span><span style="color:#79740e;">&quot;C-c s e&quot;</span><span> . sp</span><span style="color:#b23c15;">-</span><span>end</span><span style="color:#b23c15;">-</span><span>of</span><span style="color:#b23c15;">-</span><span>sexp)
+</span><span>   (</span><span style="color:#79740e;">&quot;M-[&quot;</span><span> . sp</span><span style="color:#b23c15;">-</span><span>backward</span><span style="color:#b23c15;">-</span><span>unwrap</span><span style="color:#b23c15;">-</span><span>sexp)
+</span><span>   (</span><span style="color:#79740e;">&quot;M-]&quot;</span><span> . sp</span><span style="color:#b23c15;">-</span><span>rewrap</span><span style="color:#b23c15;">-</span><span>sexp)
+</span><span>   (</span><span style="color:#79740e;">&quot;C-M-f&quot;</span><span> . sp</span><span style="color:#b23c15;">-</span><span>forward</span><span style="color:#b23c15;">-</span><span>sexp)
+</span><span>   (</span><span style="color:#79740e;">&quot;C-M-b&quot;</span><span> . sp</span><span style="color:#b23c15;">-</span><span>backward</span><span style="color:#b23c15;">-</span><span>sexp)))
+</span></code></pre>
+<h2 id="remove-yafolding">Remove yafolding</h2>
+<p>Not using it a lot these days. Besides, I don't really fold
+code that much nowadays. I guess the habit was from my early days.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> yafolding
+</span><span>  :hook (</span><span style="color:#9d0006;">prog</span><span style="color:#b23c15;">-</span><span>mode . yafolding</span><span style="color:#b23c15;">-</span><span>mode))
+</span></code></pre>
+<h2 id="remove-multiple-cursors">Remove multiple cursors</h2>
+<p>Don't remember the last time using it...</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> multiple</span><span style="color:#b23c15;">-</span><span>cursors
+</span><span>  :bind
+</span><span>  ((</span><span style="color:#79740e;">&quot;C-&gt;&quot;</span><span> . mc</span><span style="color:#b23c15;">/</span><span>mark</span><span style="color:#b23c15;">-</span><span>next</span><span style="color:#b23c15;">-</span><span>like</span><span style="color:#b23c15;">-</span><span>this)
+</span><span>   (</span><span style="color:#79740e;">&quot;C-&lt;&quot;</span><span> . mc</span><span style="color:#b23c15;">/</span><span>mark</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">previous</span><span style="color:#b23c15;">-</span><span>like</span><span style="color:#b23c15;">-</span><span>this)
+</span><span>   (</span><span style="color:#79740e;">&quot;C-c C-&lt;&quot;</span><span> . mc</span><span style="color:#b23c15;">/</span><span>mark</span><span style="color:#b23c15;">-</span><span>all</span><span style="color:#b23c15;">-</span><span>like</span><span style="color:#b23c15;">-</span><span>this)
+</span><span>   (</span><span style="color:#79740e;">&quot;C-S-c C-S-c&quot;</span><span> . mc</span><span style="color:#b23c15;">/</span><span>edit</span><span style="color:#b23c15;">-</span><span>lines)))
+</span></code></pre>
+<h2 id="remove-projectile-and-consult-projectile">Remove projectile and consult-projectile</h2>
+<p>The only two things I'm using it for are going to a
+project and finding files inside a project.</p>
+<pre style="background-color:#fcf0ca;color:#282828aa;"><code><span>(use-package projectile
+</span><span>  :init
+</span><span>  (projectile-mode)
+</span><span>  :bind-keymap
+</span><span>  (&quot;s-f&quot; . projectile-command-map)
+</span><span>  :config
+</span><span>  (setq projectile-enable-caching t
+</span><span>        projectile-switch-project-action #&#39;projectile-find-file)
+</span><span>  (progn
+</span><span>    (add-to-list &#39;projectile-globally-ignored-files &quot;node-modules&quot;)
+</span><span>    (add-to-list &#39;projectile-globally-ignored-files &quot;venv&quot;)))
+</span><span>
+</span><span>
+</span><span>(use-package consult-projectile
+</span><span>  :after consult
+</span><span>  :bind
+</span><span>  ((&quot;s-w&quot; . consult-projectile)
+</span><span>   (:map projectile-command-map 
+</span><span>        (&quot;f&quot; . consult-projectile-find-file))))
+</span></code></pre>
+<p>There's a <code>consult-project-extra</code> package if I need it but for
+now, it's bare minimum.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> project
+</span><span>  :bind</span><span style="color:#b23c15;">-</span><span>keymap
+</span><span>  (</span><span style="color:#79740e;">&quot;s-f&quot;</span><span> . project</span><span style="color:#b23c15;">-</span><span>prefix</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">map</span><span>))
+</span></code></pre>
+<h2 id="remove-easy-kill">remove easy-kill</h2>
+<p>Don't think I'm using these at all. I rely on the default <code>M-w</code> and
+<code>C-w</code> behaviour, and don't expect anything more there. So it goes to
+the bin.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> easy</span><span style="color:#b23c15;">-</span><span>kill
+</span><span>  :bind
+</span><span>  (([remap kill</span><span style="color:#b23c15;">-</span><span>ring</span><span style="color:#b23c15;">-</span><span>save] . easy</span><span style="color:#b23c15;">-</span><span>kill)))
+</span></code></pre>
+<h2 id="remove-which-key">remove which-key</h2>
+<p>I think which-key is an excellent package, and it definitely
+helps with discovery...but only if you're looking to discover
+new commands.</p>
+<pre style="background-color:#fcf0ca;color:#282828aa;"><code><span>(use-package which-key
+</span><span>  :config
+</span><span>  (which-key-mode))
+</span></code></pre>
+<h2 id="remove-dwim-shell-command">remove dwim-shell-command</h2>
+<p>I was really excited when I discovered this last year. But
+turns out I didn't really use it that often. Maybe I'm not
+doing this right. For now, this gets removed.</p>
+<h2 id="disable-git-gutter">disable git-gutter</h2>
+<p>I'll probably revert this back.</p>
+<p>Update: Yes, reverted it back.</p>
+<h2 id="remove-forge-magit">remove forge (magit)</h2>
+<p>Not using this.</p>
+<h2 id="remove-eglot">remove eglot</h2>
+<p>This is slowing everything down. I'll probably setup one of
+the bridge lsp servers later.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> eglot
+</span><span>  :hook ((python</span><span style="color:#b23c15;">-</span><span>ts</span><span style="color:#b23c15;">-</span><span>mode . eglot</span><span style="color:#b23c15;">-</span><span>ensure)
+</span><span>         (zig</span><span style="color:#b23c15;">-</span><span>mode . eglot</span><span style="color:#b23c15;">-</span><span>ensure)
+</span><span>         (rust</span><span style="color:#b23c15;">-</span><span>ts</span><span style="color:#b23c15;">-</span><span>mode . eglot</span><span style="color:#b23c15;">-</span><span>ensure))
+</span><span>  :bind</span><span style="color:#b23c15;">-</span><span>keymap (</span><span style="color:#79740e;">&quot;C-c l&quot;</span><span> . eglot</span><span style="color:#b23c15;">-</span><span>mode</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">map</span><span>)
+</span><span>  :bind (:</span><span style="color:#b57614;">map</span><span> eglot</span><span style="color:#b23c15;">-</span><span>mode</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">map
+</span><span>              (</span><span style="color:#79740e;">&quot;C-c l r&quot;</span><span> . eglot</span><span style="color:#b23c15;">-</span><span>rename)
+</span><span>              (</span><span style="color:#79740e;">&quot;C-c l o&quot;</span><span> . eglot</span><span style="color:#b23c15;">-</span><span>code</span><span style="color:#b23c15;">-</span><span>action</span><span style="color:#b23c15;">-</span><span>organize</span><span style="color:#b23c15;">-</span><span>imports)
+</span><span>              (</span><span style="color:#79740e;">&quot;C-c l h&quot;</span><span> . eldoc)
+</span><span>              (</span><span style="color:#79740e;">&quot;C-c l c&quot;</span><span> . eglot</span><span style="color:#b23c15;">-</span><span>reconnect)
+</span><span>              (</span><span style="color:#79740e;">&quot;C-c l a&quot;</span><span> . eglot</span><span style="color:#b23c15;">-</span><span>code</span><span style="color:#b23c15;">-</span><span>actions))
+</span><span>  :config
+</span><span>  (</span><span style="color:#b57614;">setq</span><span> eglot</span><span style="color:#b23c15;">-</span><span>ignored</span><span style="color:#b23c15;">-</span><span>server</span><span style="color:#b23c15;">-</span><span>capabilities &#39;(:inlayHintProvider))
+</span><span>  (</span><span style="color:#b57614;">setq</span><span> eglot</span><span style="color:#b23c15;">-</span><span>extend</span><span style="color:#b23c15;">-</span><span style="color:#9d0006;">to</span><span style="color:#b23c15;">-</span><span>xref </span><span style="color:#8f3f71;">t</span><span>)
+</span><span>  (add</span><span style="color:#b23c15;">-</span><span style="color:#9d0006;">to</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">list</span><span> &#39;eglot</span><span style="color:#b23c15;">-</span><span>stay</span><span style="color:#b23c15;">-</span><span>out</span><span style="color:#b23c15;">-</span><span>of &#39;flymake)
+</span><span>  (add</span><span style="color:#b23c15;">-</span><span style="color:#9d0006;">to</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">list</span><span> &#39;eglot</span><span style="color:#b23c15;">-</span><span>stay</span><span style="color:#b23c15;">-</span><span>out</span><span style="color:#b23c15;">-</span><span>of &#39;eldoc))
+</span></code></pre>
+<h2 id="remove-dash-for-docs">remove dash for docs</h2>
+<p>This was marked for removal before</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> dash</span><span style="color:#b23c15;">-</span><span>docs
+</span><span>  :config
+</span><span>  (</span><span style="color:#b57614;">setq</span><span> dash</span><span style="color:#b23c15;">-</span><span>docs</span><span style="color:#b23c15;">-</span><span>browser</span><span style="color:#b23c15;">-</span><span>func &#39;eww)
+</span><span>  (</span><span style="color:#b57614;">setq</span><span> dash</span><span style="color:#b23c15;">-</span><span>docs</span><span style="color:#b23c15;">-</span><span>common</span><span style="color:#b23c15;">-</span><span>docsets &#39;(</span><span style="color:#79740e;">&quot;PostgreSQL&quot;</span><span>)))
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defun </span><span style="color:#407959;">kes-python3-docs </span><span>()
+</span><span>  (interactive)
+</span><span>  (</span><span style="color:#b57614;">setq</span><span style="color:#b23c15;">-</span><span>local dash</span><span style="color:#b23c15;">-</span><span>docs</span><span style="color:#b23c15;">-</span><span>docsets &#39;(</span><span style="color:#79740e;">&quot;Python 3&quot; &quot;Django&quot; &quot;PostgreSQL&quot;</span><span>)))
+</span><span>
+</span><span>(add</span><span style="color:#b23c15;">-</span><span>hook &#39;python</span><span style="color:#b23c15;">-</span><span>mode</span><span style="color:#b23c15;">-</span><span>hook &#39;kes</span><span style="color:#b23c15;">-</span><span>python3</span><span style="color:#b23c15;">-</span><span>docs)
+</span><span>
+</span><span>(</span><span style="color:#b57614;">use-package</span><span> consult</span><span style="color:#b23c15;">-</span><span>dash
+</span><span>  :after consult
+</span><span>  :bind ((</span><span style="color:#79740e;">&quot;C-c d&quot;</span><span> . consult</span><span style="color:#b23c15;">-</span><span>dash))
+</span><span>  :config
+</span><span>  (consult</span><span style="color:#b23c15;">-</span><span>customize consult</span><span style="color:#b23c15;">-</span><span>dash :initial (thing</span><span style="color:#b23c15;">-</span><span>at</span><span style="color:#b23c15;">-</span><span>point &#39;symbol)))
+</span></code></pre>
+<h2 id="remove-treemacs">remove treemacs</h2>
+<p>Wasn't using it.</p>
+<h2 id="habit-switching-windows">habit: switching windows</h2>
+<p>I have been using this for a long time now.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> emacs
+</span><span>  :bind
+</span><span>  (</span><span style="color:#79740e;">&quot;s-n&quot;</span><span> . next</span><span style="color:#b23c15;">-</span><span>multiframe</span><span style="color:#b23c15;">-</span><span>window)
+</span><span>  (</span><span style="color:#79740e;">&quot;s-m&quot;</span><span> . </span><span style="color:#b57614;">previous</span><span style="color:#b23c15;">-</span><span>multiframe</span><span style="color:#b23c15;">-</span><span>window))
+</span></code></pre>
+<p>Due to the force of habit, I've not been able to switch to <code>ace-window</code>.
+But I'm gonna force myself by removing these keybindings and switching
+to <code>s-o</code></p>
+<pre data-lang="list" style="background-color:#fcf0ca;color:#282828aa;" class="language-list "><code class="language-list" data-lang="list"><span>(use-package ace-window
+</span><span>  :bind (&quot;s-o&quot; . ace-window)
+</span><span>  :config
+</span><span>  (setq aw-scope &#39;frame)
+</span><span>  (set-face-attribute &#39;aw-leading-char-face nil :height 1.9))
+</span></code></pre>
+<p>Finally, doing this so that punishment for using the old bindings is
+not harsh. MacOS binds them to New window and Minimize by default.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(global</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">set</span><span style="color:#b23c15;">-</span><span>key (kbd </span><span style="color:#79740e;">&quot;s-n&quot;</span><span>) </span><span style="color:#8f3f71;">nil</span><span>) </span><span style="font-style:italic;color:#928374;">;; new window
+</span><span>(global</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">set</span><span style="color:#b23c15;">-</span><span>key (kbd </span><span style="color:#79740e;">&quot;s-m&quot;</span><span>) </span><span style="color:#8f3f71;">nil</span><span>) </span><span style="font-style:italic;color:#928374;">;; minimize
+</span></code></pre>
+<h2 id="remove-htmlize">Remove htmlize</h2>
+<p>I'm not using org to publish html these days so this is not necessary</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> htmlize
+</span><span>  :config
+</span><span>  (</span><span style="color:#b57614;">setq</span><span> org</span><span style="color:#b23c15;">-</span><span>html</span><span style="color:#b23c15;">-</span><span>htmlize</span><span style="color:#b23c15;">-</span><span>output</span><span style="color:#b23c15;">-</span><span>type &#39;css))
+</span></code></pre>
+<h2 id="remove-semantic">Remove semantic</h2>
+<p>When editing certain files, every pause triggered a garbage collection. It only
+happened in certain buffers once in a while. After going through every
+minor modes on that buffer, I found the culprit to be <code>semantic-idle-scheduler-mode</code>.</p>
+<p>But I will switch off semantic mode instead of configuring this minor mode because
+I don't really need it. I don't know why I enabled it in the first place.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(semantic</span><span style="color:#b23c15;">-</span><span>mode </span><span style="color:#8f3f71;">t</span><span>)
+</span></code></pre>
+<p>By turning it off, I may have solved an older issue where every single keystroke
+would take about half a second.</p>
+<h2 id="spell-checking">Spell checking</h2>
+<p>I've not bothered to set this up properly. Needs revisiting.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> ispell
+</span><span>  :config
+</span><span>  (setenv </span><span style="color:#79740e;">&quot;DICTIONARY&quot; &quot;en_GB&quot;</span><span>)
+</span><span>  (</span><span style="color:#b57614;">setq</span><span> ispell</span><span style="color:#b23c15;">-</span><span>program</span><span style="color:#b23c15;">-</span><span>name </span><span style="color:#79740e;">&quot;hunspell&quot;
+</span><span>        ispell</span><span style="color:#b23c15;">-</span><span>dictionary </span><span style="color:#79740e;">&quot;en_GB&quot;
+</span><span>        ))
+</span><span>
+</span><span>(</span><span style="color:#b57614;">use-package</span><span> flyspell
+</span><span>  :config
+</span><span>  (flyspell</span><span style="color:#b23c15;">-</span><span>mode))
+</span></code></pre>
+<h2 id="remove-undo-tree">Remove undo-tree</h2>
+<p>Using <code>vundo</code> now.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> undo</span><span style="color:#b23c15;">-</span><span>tree
+</span><span>  :defer </span><span style="color:#8f3f71;">t
+</span><span>  :init (global</span><span style="color:#b23c15;">-</span><span>undo</span><span style="color:#b23c15;">-</span><span>tree</span><span style="color:#b23c15;">-</span><span>mode)
+</span><span>  :custom
+</span><span>  (undo</span><span style="color:#b23c15;">-</span><span>tree</span><span style="color:#b23c15;">-</span><span>auto</span><span style="color:#b23c15;">-</span><span>save</span><span style="color:#b23c15;">-</span><span>history </span><span style="color:#8f3f71;">nil</span><span>)
+</span><span>  (undo</span><span style="color:#b23c15;">-</span><span>tree</span><span style="color:#b23c15;">-</span><span>visualizer</span><span style="color:#b23c15;">-</span><span>diff </span><span style="color:#8f3f71;">t</span><span>)
+</span><span>  (undo</span><span style="color:#b23c15;">-</span><span>tree</span><span style="color:#b23c15;">-</span><span>history</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">directory</span><span style="color:#b23c15;">-</span><span>alist &#39;((</span><span style="color:#79740e;">&quot;.&quot;</span><span> . </span><span style="color:#79740e;">&quot;~/.emacs.d/undo&quot;</span><span>)))
+</span><span>  (undo</span><span style="color:#b23c15;">-</span><span>tree</span><span style="color:#b23c15;">-</span><span>visualizer</span><span style="color:#b23c15;">-</span><span>timestamps </span><span style="color:#8f3f71;">t</span><span>))
+</span></code></pre>
+<h1 id="for-later">For later</h1>
+<p>While going through my config, I came across many other packages
+and workflows. I get easily distracted by clicking on a dozen
+links and reading everything...and that's no good. So here's
+a list that future me can check.</p>
+<h2 id="detached-retry">detached retry</h2>
+<p>Give <a rel="noopener" target="_blank" href="https://sr.ht/~niklaseklund/detached.el/">detached.el</a> another try.
+I love the concept of it but I've not really used it in real life.</p>
+<pre data-lang="lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-lisp "><code class="language-lisp" data-lang="lisp"><span>(</span><span style="color:#b57614;">use-package</span><span> detached
+</span><span>  :init
+</span><span>  (detached</span><span style="color:#b23c15;">-</span><span>init)
+</span><span>  :bind (</span><span style="font-style:italic;color:#928374;">;; Replace `async-shell-command&#39; with `detached-shell-command&#39;
+</span><span>         ([remap async</span><span style="color:#b23c15;">-</span><span>shell</span><span style="color:#b23c15;">-</span><span>command] . detached</span><span style="color:#b23c15;">-</span><span>shell</span><span style="color:#b23c15;">-</span><span>command)
+</span><span>         </span><span style="font-style:italic;color:#928374;">;; Replace `compile&#39; with `detached-compile&#39;
+</span><span>         ([remap </span><span style="color:#b57614;">compile</span><span>] . detached</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">compile</span><span>)
+</span><span>         ([remap recompile] . detached</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">compile</span><span style="color:#b23c15;">-</span><span>recompile)
+</span><span>         </span><span style="font-style:italic;color:#928374;">;; Replace built in completion of sessions with `consult&#39;
+</span><span>         ([remap detached</span><span style="color:#b23c15;">-</span><span style="color:#b57614;">open</span><span style="color:#b23c15;">-</span><span>session] . detached</span><span style="color:#b23c15;">-</span><span>consult</span><span style="color:#b23c15;">-</span><span>session))
+</span><span>  :custom ((detached</span><span style="color:#b23c15;">-</span><span>show</span><span style="color:#b23c15;">-</span><span>output</span><span style="color:#b23c15;">-</span><span>on</span><span style="color:#b23c15;">-</span><span>attach </span><span style="color:#8f3f71;">t</span><span>)
+</span><span>           (detached</span><span style="color:#b23c15;">-</span><span>terminal</span><span style="color:#b23c15;">-</span><span>data</span><span style="color:#b23c15;">-</span><span>command system</span><span style="color:#b23c15;">-</span><span>type)))
+</span></code></pre>
+<h2 id="undo-tree-vs-vundo">undo-tree vs vundo</h2>
+<p>undo-tree is one of the most common package that I use but is vundo
+better?</p>
+<blockquote>
+<p>Vundo doesn’t need to be turned on all the time nor replace the undo
+commands like undo-tree does. Vundo displays the tree horizontally,
+whereas undo-tree displays a tree vertically.  Diff is provided
+on-demand between any nodes.
+<a rel="noopener" target="_blank" href="https://github.com/casouri/vundo">https://github.com/casouri/vundo</a></p>
+</blockquote>
+<p>also</p>
+<blockquote>
+<p>I have not used vundo, but it seems to be just a visualizer for the
+buffer undo list, whereas undo-tree takes over the undo system,
+replacing not just the commands but the data structure
+(https://github.com/apchamberlain/undo-tree.el/blob/help-in-v...).
+In other words, I think there's simply less surface area for vundo
+to have or cause problems.
+<a rel="noopener" target="_blank" href="https://news.ycombinator.com/item?id=33057027">https://news.ycombinator.com/item?id=33057027</a></p>
+</blockquote>
+<p>Although I don't remember the last time I've had a problem with
+undo-tree.</p>
+<p>Update: switched to <code>vundo</code></p>
+<h2 id="the-rest">the rest</h2>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://github.com/emacscollective/no-littering">https://github.com/emacscollective/no-littering</a></li>
+<li>Reddit: Onatolin's <a rel="noopener" target="_blank" href="https://www.reddit.com/r/emacs/comments/1dj4298/comment/l9f0cmc/">comment</a>
+on using Embark as an alternative to which-key</li>
+<li>Reddit: Which key is available in <a rel="noopener" target="_blank" href="https://www.reddit.com/r/emacs/comments/1dj4298/whichkey_now_included_in_emacs_30/">Emacs 30</a></li>
+<li>give <a rel="noopener" target="_blank" href="https://codeberg.org/akib/emacs-eat">eat terminal</a> another try</li>
+<li>more dired-hacks, (currently I'm using <code>diredfl</code> only)</li>
+<li>try <a rel="noopener" target="_blank" href="https://github.com/federicotdn/verb">verb</a> to replace <code>restclient.el</code></li>
+<li>spell checking setup</li>
+<li>compile command <a rel="noopener" target="_blank" href="https://www.reddit.com/r/emacs/comments/1h2o8hr/share_your_mx_compile_compilationmode_config/">https://www.reddit.com/r/emacs/comments/1h2o8hr/share_your_mx_compile_compilationmode_config/</a></li>
+</ul>
+
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://keshp.com/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://keshp.com/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://keshp.com/js.js" defer></script>
+
+</body>
+</html>

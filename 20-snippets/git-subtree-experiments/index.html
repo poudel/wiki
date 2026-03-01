@@ -1,0 +1,507 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://keshp.com/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> thoughts in progress | Experiments with git-subtree </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <h1><a href="https:&#x2F;&#x2F;keshp.com">thoughts in progress</a></h1>
+            <div>
+                <small>it&#x27;s not even a proper wiki</small>
+            </div>
+            <br>
+
+            <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                <input class="tree-toggle" type="checkbox" id="python"
+                           />
+                    <label class="tree-toggle-label"
+                           for="python">Python</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/05-python/100-fav-python-talks/">Favorite Python Talks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/10-py-environments/">Python environments</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/300-py-bookmarks/">Python Bookmarks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/400-dynamic-serializers-drf/">Dynamic serializers in DRF</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/401-django-side-projects/">Starting side projects with Django</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/402-django-ksuid-field/">Django KSUID field</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/500-simple-scraper/">Generic scraper in Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/501-httpserver/">HTTP Server</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/700-click/">Click</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="emacs"
+                           />
+                    <label class="tree-toggle-label"
+                           for="emacs">Emacs</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/15-emacs/10-using-emacs-plus/">Emacs Plus</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/200-dwim-shell-commands/">DWIM shell command</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/201-magit-forge/">Magit Forge</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/202-refactoring/">Config refactoring</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="snippets"
+                           checked/>
+                    <label class="tree-toggle-label"
+                           for="snippets">Snippets</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/20-snippets/new-entry-helper/">Automating creating new entries</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/tailing-logs/">tailing logs</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/inkpalm/">InkPalm 5 mini e-reader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/cleaning-lelit-elizabeth/">Cleaning Lelit Elizabeth</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/slack-org-capture/">org slack messages</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/files-are-mess/">dorotac on filesystems</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/dms-again/">Document management, again</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/pycharm-docker-interpreter/">Pycharm not finding Docker interpreter</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/magit-find-file/">magit-find-file</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/go-unique-package/">Go unique package</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/quest-document-management/">Document management</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/thinkpad-homelab/">ThinkPad T470 for Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/discovering-hyperbole/">Discovering Hyperbole</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/using-minions-el/">Replacing rich-minority with minions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/emacs-for-python/">Back to using Emacs for Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/everything-inside-dotfiles/">Keeping everything inside ~&#x2F;dotfiles directory</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/linux-laptop/">Linux laptop to play with</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="https://keshp.com/20-snippets/git-subtree-experiments/">Experiments with git-subtree</a>
+                            </li>
+
+                            
+                                    
+                                    
+                                        <ul id="toc">
+                                            <li><a href="
+                                                        https://keshp.com/20-snippets/git-subtree-experiments/#why-am-i-doing-all-this">Why am I doing all this?</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://keshp.com/20-snippets/git-subtree-experiments/#how-does-it-work">How does it work?</a>
+                                                    <ul>
+                                                            <li>
+                                                                    <a href="https://keshp.com/20-snippets/git-subtree-experiments/#namespacing-mishap">Namespacing mishap</a>
+                                                                </li>
+                                                            <li>
+                                                                    <a href="https://keshp.com/20-snippets/git-subtree-experiments/#til">TIL</a>
+                                                                </li>
+                                                            </ul>
+                                                    </li>
+                                            <li><a href="
+                                                        https://keshp.com/20-snippets/git-subtree-experiments/#appendix">Appendix</a>
+                                                    <ul>
+                                                            <li>
+                                                                    <a href="https://keshp.com/20-snippets/git-subtree-experiments/#elisp-code-to-build-and-publish-keshp-dot-com">Elisp code to build and publish keshp.com</a>
+                                                                </li>
+                                                            </ul>
+                                                    </li>
+                                            <li><a href="
+                                                        https://keshp.com/20-snippets/git-subtree-experiments/#links">Links</a>
+                                                    </li>
+                                            </ul>
+                                    </ul>
+                <input class="tree-toggle" type="checkbox" id="postgresql"
+                           />
+                    <label class="tree-toggle-label"
+                           for="postgresql">PostgreSQL</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/40-postgres/01-general/">Misc Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/100-upgrade-postgres/">Upgrade Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/200-saving-history/">Saving history</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="whatever"
+                           />
+                    <label class="tree-toggle-label"
+                           for="whatever">Whatever</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/50-whatever/20-homelab/">Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/21-ssh/">SSH</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/30-docker/">Docker</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/150-i-might-need-these/">I might need these</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/151-plugin-rust/">Plugin system for rust projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/200-thoughts-on-side-projects/">Thoughts on side projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/201-rules-dsl/">[WIP] SaaS DSL</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/300-this-website/">This website</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/400-berlin/">Berlin</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="macos"
+                           />
+                    <label class="tree-toggle-label"
+                           for="macos">MacOS</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/60-macos/100-gpg-macos/">GPG on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/101-nix-macos/">Trying Nix on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/102-sloth-app/">Sloth app</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/103-aerospace/">Aerospace</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="food"
+                           />
+                    <label class="tree-toggle-label"
+                           for="food">Food</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/150-food/1-plum-torte/">Plum torte</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/150-food/2-pizza/">Plum torte</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="coding-exercises"
+                           />
+                    <label class="tree-toggle-label"
+                           for="coding-exercises">Coding Exercises</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/10-protohackers/">Protohackers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/11-golang-exercises/">Golang exercises</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/50-project-ideas/">Project ideas</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/100-aoc-2020-day-1/">AoC 2020, Day 1</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/101-aoc-2020-day-2/">AoC 2020, Day 2</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/102-aoc-2020-day-3/">AoC 2020, Day 3</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+
+        <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        <div id="wrap">
+            
+    <h2>Experiments with git-subtree</h2>
+        <p>I'm learning the Rust language these days. I like making real things
+once I get a little comfortable with the language. One of the first
+things is to make a basic text editor.</p>
+<p>For this, I'm following <a rel="noopener" target="_blank" href="https://www.philippflenker.com/hecto/">Hecto: Build your own text editor in Rust</a> by
+Philipp Flenker. It's a well written tutorial and I'm thoroughly
+enjoying it.</p>
+<p>Then somehow I find myself watching John Wiegley's <a rel="noopener" target="_blank" href="https://www.youtube.com/watch?v=j-k-lkilbEs">It's Magit!</a> talk on
+youtube. It's an excellent introduction to magit, by the way. I've
+been using it for many years now and I still discover new ways to
+improve my workflow.</p>
+<p>At this point, I'm overcome with an overwhelming sense to tinker with
+something. And, here we are. It even got an excuse to write a post
+after a long time.</p>
+<p>This is written in org-mode and published with org-mode. It is a
+github repository with it's own build/publish flow using emacs and a
+<code>Makefile</code>.</p>
+<p>That slightly changes from today. Now the repo is a "subtree" in my
+dotemacs directory. The elisp configuration also becomes a part of my
+emacs config.</p>
+<p>It'll also keep staying as a separate repository on github. This is
+partly because github only lets you publish one page per page.
+Actually, I think it's mostly that.</p>
+<h2 id="why-am-i-doing-all-this">Why am I doing all this?</h2>
+<p>I admit it's mostly because I needed to tinker with something.</p>
+<p>However, there are some technical benefits to this. The first is to
+have all my elisp in one place. The plumbing required to get this site
+published is not a significant one but I can reuse some of the code to
+publish other sites and so on.</p>
+<p>It's also a step into my ongoing work to consolidate all my text files
+in one repo. This will include dotfiles, of course, but also files
+that I want to carry with me to the grave. When I'm done, everything
+will be part of that one big repository.</p>
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>It's simple, really. You add the repo as a subtree. Subtree is just
+another way of saying a directory in the git repo. It's fundamentally
+different to <code>submodules</code> in a sense that submodule references another
+git repository while subtree blatently copies it into yours.</p>
+<p>This has a major benefit for my type of situations. I can mainly work
+from my main repo: making changes to the subtree as a first class
+citizen of your project. It's more suited for this because the changes
+will always flow from my main repo to the sub-repo because I only ever
+push there to publish, and I'm the sole person to make changes.</p>
+<p>Obviously, it's possible to have changes flow in both direction, but
+it's just not something I need.</p>
+<p>I wrote a couple of elsip functions to build and publish the site.
+This one is to build the site and copy the <code>CNAME</code> file if it doesn't
+exist already.</p>
+<h3 id="namespacing-mishap">Namespacing mishap</h3>
+<p>I tried namespacing the component names with a <code>kes/</code> prefix but that
+raised an error while trying to generate the website because
+<code>ox-publish</code> tries to create caches to avoid regenerating old files.</p>
+<p>It does so by creating a directory called
+<code>.org-timestamps/&lt;file-path&gt;</code>.</p>
+<p>Since my original prefix had a forward slash in it, it complained that
+the directory <code>.org-timestamps/.../kes/</code> doesn't exist. So I just
+changed the prefix.</p>
+<h3 id="til">TIL</h3>
+<p>In a magit buffer, you can use 1, 2, 3, 4 keys to show diff/patches
+instead of hitting the TAB key multiple times.</p>
+<h2 id="appendix">Appendix</h2>
+<h3 id="elisp-code-to-build-and-publish-keshp-dot-com">Elisp code to build and publish keshp.com</h3>
+<p>Update: 2022-08-27</p>
+<p>Previously this was an org include link to the function in my init
+file but any small change on that file made this regenerate while
+building the site. So, now it's just copied here. See the <code>dotemacs</code>
+directory for an up to date version.</p>
+<h4 id="basics">Basics</h4>
+<pre data-lang="emacs-lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-emacs-lisp "><code class="language-emacs-lisp" data-lang="emacs-lisp"><span>(defun kes/expand-keshp.com (path)
+</span><span>  &quot;Expand to absolute path inside ./keshp.com/ subtree&quot;
+</span><span>  (expand-file-name (concat &quot;~/dotfiles/keshp.com/&quot; path)))
+</span><span>
+</span><span>(defconst gh-poudel &quot;git@github.com:poudel/&quot;)
+</span><span>(defconst keshp-com-subtree &quot;keshp.com&quot;)
+</span><span>(defconst gh-keshp-com (concat gh-poudel keshp-com-subtree &quot;.git&quot;))
+</span></code></pre>
+<h4 id="configure-org-publish">Configure org-publish</h4>
+<p>First we configure  <code>org-publish-project</code> by setting
+<code>org-publish-project-alist</code>.</p>
+<pre data-lang="emacs-lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-emacs-lisp "><code class="language-emacs-lisp" data-lang="emacs-lisp"><span>(setq org-html-validation-link nil)
+</span><span>(setq org-publish-project-alist
+</span><span>  `((&quot;keshp.com-home&quot;
+</span><span>    :base-directory ,(kes/expand-keshp.com &quot;src&quot;)
+</span><span>    :base-extension &quot;org&quot;
+</span><span>    :publishing-directory ,(kes/expand-keshp.com &quot;docs&quot;)
+</span><span>    :recursive nil
+</span><span>    :publishing-function org-html-publish-to-html)
+</span><span>
+</span><span>   ;; base directory src to preserve the relative path
+</span><span>   (&quot;keshp.com-static&quot;
+</span><span>    :base-directory ,(kes/expand-keshp.com &quot;src&quot;)
+</span><span>    :base-extension &quot;css\\|js\\|png\\|svg\\|txt&quot;
+</span><span>    :publishing-directory ,(kes/expand-keshp.com &quot;docs&quot;)
+</span><span>    :publishing-function org-publish-attachment
+</span><span>    :recursive t)
+</span><span>
+</span><span>   (&quot;keshp.com-blog&quot;
+</span><span>    :base-directory ,(kes/expand-keshp.com &quot;src/blog&quot;)
+</span><span>    :base-extension &quot;org&quot;
+</span><span>    :publishing-directory ,(kes/expand-keshp.com &quot;docs/blog&quot;)
+</span><span>    :recursive t
+</span><span>    :publishing-function org-html-publish-to-html
+</span><span>
+</span><span>    :section-numbers nil
+</span><span>    :with-creator t
+</span><span>    :with-date t
+</span><span>    :with-toc nil
+</span><span>
+</span><span>    :html-head nil
+</span><span>    :html-head-include-default-style nil
+</span><span>    :html-head-extra &quot;&lt;link rel=&#39;stylesheet&#39; href=&#39;../static/index.css&#39; /&gt;&quot;
+</span><span>    :html-doctype &quot;html5&quot;
+</span><span>
+</span><span>    :auto-sitemap t
+</span><span>    :sitemap-title &quot;blog&quot;
+</span><span>    :sitemap-filename &quot;index.org&quot;
+</span><span>    :sitemap-style list
+</span><span>    :sitemap-sort-files anti-chronologically
+</span><span>    )
+</span><span>
+</span><span>   (&quot;keshp.com-website&quot;
+</span><span>    :components (&quot;keshp.com-blog&quot; &quot;keshp.com-home&quot; &quot;keshp.com-static&quot;)
+</span><span>    :html-validation-link nil
+</span><span>    )))
+</span></code></pre>
+<h4 id="build-the-site">Build the site</h4>
+<pre data-lang="emacs-lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-emacs-lisp "><code class="language-emacs-lisp" data-lang="emacs-lisp"><span>(defun kes/build-keshp-com ()
+</span><span>  &quot;Build keshp.com using org-publish into the /docs directory&quot;
+</span><span>  (interactive)
+</span><span>   (org-publish-project &quot;keshp.com-website&quot;)
+</span><span>   (copy-file (kes/expand-keshp.com &quot;CNAME&quot;) (kes/expand-keshp.com &quot;docs/CNAME&quot;) t t))
+</span><span>
+</span><span>;;  (kes/build-keshp-com)
+</span></code></pre>
+<h4 id="push-the-subtree">Push the subtree</h4>
+<p>The following function pushes any new commits for files with the
+prefix <code>keshp.com</code> (i.e. inside <code>keshp.com/</code> directory) to it's own
+github repo.</p>
+<pre data-lang="emacs-lisp" style="background-color:#fcf0ca;color:#282828aa;" class="language-emacs-lisp "><code class="language-emacs-lisp" data-lang="emacs-lisp"><span>(defun kes/push-keshp-com ()
+</span><span>  &quot;Push keshp.com subtree changes to remote&quot;
+</span><span>  (interactive)
+</span><span>  (magit-subtree-push keshp-com-subtree gh-keshp-com &quot;master&quot; nil))
+</span></code></pre>
+<h2 id="links">Links</h2>
+<ol>
+<li><a rel="noopener" target="_blank" href="https://gist.github.com/SKempin/b7857a6ff6bddb05717cc17a44091202">Git subtree basics</a> gist</li>
+<li><a rel="noopener" target="_blank" href="https://github.com/poudel/dotemacs/">https://github.com/poudel/dotemacs/</a></li>
+<li><a rel="noopener" target="_blank" href="https://github.com/poudel/keshp.com">https://github.com/poudel/keshp.com</a></li>
+<li><a rel="noopener" target="_blank" href="https://magit.vc/manual/magit/Subtree.html">https://magit.vc/manual/magit/Subtree.html</a></li>
+</ol>
+
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://keshp.com/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://keshp.com/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://keshp.com/js.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://keshp.com/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> thoughts in progress | AoC 2020, Day 2 </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <h1><a href="https:&#x2F;&#x2F;keshp.com">thoughts in progress</a></h1>
+            <div>
+                <small>it&#x27;s not even a proper wiki</small>
+            </div>
+            <br>
+
+            <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                <input class="tree-toggle" type="checkbox" id="python"
+                           />
+                    <label class="tree-toggle-label"
+                           for="python">Python</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/05-python/100-fav-python-talks/">Favorite Python Talks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/10-py-environments/">Python environments</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/300-py-bookmarks/">Python Bookmarks</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/400-dynamic-serializers-drf/">Dynamic serializers in DRF</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/401-django-side-projects/">Starting side projects with Django</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/402-django-ksuid-field/">Django KSUID field</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/500-simple-scraper/">Generic scraper in Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/501-httpserver/">HTTP Server</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/05-python/700-click/">Click</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="emacs"
+                           />
+                    <label class="tree-toggle-label"
+                           for="emacs">Emacs</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/15-emacs/10-using-emacs-plus/">Emacs Plus</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/200-dwim-shell-commands/">DWIM shell command</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/201-magit-forge/">Magit Forge</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/15-emacs/202-refactoring/">Config refactoring</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="snippets"
+                           />
+                    <label class="tree-toggle-label"
+                           for="snippets">Snippets</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/20-snippets/new-entry-helper/">Automating creating new entries</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/tailing-logs/">tailing logs</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/inkpalm/">InkPalm 5 mini e-reader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/cleaning-lelit-elizabeth/">Cleaning Lelit Elizabeth</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/slack-org-capture/">org slack messages</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/files-are-mess/">dorotac on filesystems</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/dms-again/">Document management, again</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/pycharm-docker-interpreter/">Pycharm not finding Docker interpreter</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/magit-find-file/">magit-find-file</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/go-unique-package/">Go unique package</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/quest-document-management/">Document management</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/thinkpad-homelab/">ThinkPad T470 for Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/discovering-hyperbole/">Discovering Hyperbole</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/using-minions-el/">Replacing rich-minority with minions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/emacs-for-python/">Back to using Emacs for Python</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/everything-inside-dotfiles/">Keeping everything inside ~&#x2F;dotfiles directory</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/linux-laptop/">Linux laptop to play with</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/20-snippets/git-subtree-experiments/">Experiments with git-subtree</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="postgresql"
+                           />
+                    <label class="tree-toggle-label"
+                           for="postgresql">PostgreSQL</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/40-postgres/01-general/">Misc Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/100-upgrade-postgres/">Upgrade Postgres</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/40-postgres/200-saving-history/">Saving history</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="whatever"
+                           />
+                    <label class="tree-toggle-label"
+                           for="whatever">Whatever</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/50-whatever/20-homelab/">Homelab</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/21-ssh/">SSH</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/30-docker/">Docker</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/150-i-might-need-these/">I might need these</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/151-plugin-rust/">Plugin system for rust projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/200-thoughts-on-side-projects/">Thoughts on side projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/201-rules-dsl/">[WIP] SaaS DSL</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/300-this-website/">This website</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/50-whatever/400-berlin/">Berlin</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="macos"
+                           />
+                    <label class="tree-toggle-label"
+                           for="macos">MacOS</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/60-macos/100-gpg-macos/">GPG on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/101-nix-macos/">Trying Nix on MacOS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/102-sloth-app/">Sloth app</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/60-macos/103-aerospace/">Aerospace</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="food"
+                           />
+                    <label class="tree-toggle-label"
+                           for="food">Food</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/150-food/1-plum-torte/">Plum torte</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/150-food/2-pizza/">Plum torte</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="coding-exercises"
+                           checked/>
+                    <label class="tree-toggle-label"
+                           for="coding-exercises">Coding Exercises</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/10-protohackers/">Protohackers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/11-golang-exercises/">Golang exercises</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/50-project-ideas/">Project ideas</a>
+                            </li>
+
+                            <li >
+                                <a href="https://keshp.com/1000-coding-exercises/100-aoc-2020-day-1/">AoC 2020, Day 1</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="https://keshp.com/1000-coding-exercises/101-aoc-2020-day-2/">AoC 2020, Day 2</a>
+                            </li>
+
+                            
+                                    
+                                    
+                                        <li >
+                                <a href="https://keshp.com/1000-coding-exercises/102-aoc-2020-day-3/">AoC 2020, Day 3</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+
+        <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        <div id="wrap">
+            
+    <h2>AoC 2020, Day 2</h2>
+        <p>Day two of the advent calendar, I decided not to do it first in python
+to focus only on Clojure.</p>
+<p>I put the repo with all solutions on github. But I'm not beneath
+adding some padding to blog.</p>
+<h2 id="part-one">Part One</h2>
+<p>This is my first time doing the advent of code, even though it has
+been going on for about 5 years.</p>
+<p>Which is why I didn't realize that every challenge has more than one
+parts. Just like yesterday.</p>
+<p>This is what I came up with. It took me a lot more than I'd
+anticipated.</p>
+<pre data-lang="clojure" style="background-color:#fcf0ca;color:#282828aa;" class="language-clojure "><code class="language-clojure" data-lang="clojure"><span>(</span><span style="color:#9d0006;">def </span><span style="color:#407959;">regex </span><span style="color:#b23c15;">#</span><span style="color:#79740e;">&quot;</span><span style="color:#9d0006;">(?&lt;</span><span style="color:#407959;">min</span><span style="color:#9d0006;">&gt;\d</span><span style="color:#b23c15;">+</span><span style="color:#9d0006;">)</span><span style="color:#79740e;">-</span><span style="color:#9d0006;">(?&lt;</span><span style="color:#407959;">max</span><span style="color:#9d0006;">&gt;\d</span><span style="color:#b23c15;">+</span><span style="color:#9d0006;">)\s</span><span style="color:#b23c15;">+</span><span style="color:#9d0006;">(?&lt;</span><span style="color:#407959;">letter</span><span style="color:#9d0006;">&gt;\w)</span><span style="color:#79740e;">:</span><span style="color:#9d0006;">\s</span><span style="color:#b23c15;">+</span><span style="color:#9d0006;">(?&lt;</span><span style="color:#407959;">password</span><span style="color:#9d0006;">&gt;.</span><span style="color:#b23c15;">*</span><span style="color:#9d0006;">)</span><span style="color:#79740e;">&quot;</span><span>)
+</span><span>(</span><span style="color:#9d0006;">def </span><span style="color:#407959;">input-file-path </span><span>(</span><span style="color:#282828;">str </span><span>(</span><span style="color:#282828;">.getCanonicalPath </span><span>(</span><span style="color:#282828;">clojure.java.io/file </span><span style="color:#79740e;">&quot;.&quot;</span><span>)) </span><span style="color:#79740e;">&quot;/resources/day2-input.txt&quot;</span><span>))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">parse-line </span><span>[line]
+</span><span>  </span><span style="color:#79740e;">&quot;Parse each line and return a vector containing
+</span><span style="color:#79740e;">  [min max char password] or nil&quot;
+</span><span>
+</span><span>  (</span><span style="color:#282828;">let </span><span>[[_ min max letter password]
+</span><span>        (</span><span style="color:#282828;">re-matches</span><span> regex line)]
+</span><span>
+</span><span>    (</span><span style="color:#282828;">if </span><span>(</span><span style="color:#282828;">and</span><span> min max letter password)
+</span><span>      [(</span><span style="color:#282828;">Integer/parseInt</span><span> min)
+</span><span>       (</span><span style="color:#282828;">Integer/parseInt</span><span> max)
+</span><span>       (</span><span style="color:#282828;">first </span><span>(</span><span style="color:#282828;">char-array</span><span> letter))
+</span><span>       password])))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">is-valid?
+</span><span>  </span><span style="color:#79740e;">&quot;Predicate. Checks if a given password string
+</span><span style="color:#79740e;">  adheres to the given password policy.&quot;
+</span><span>
+</span><span>  [line]
+</span><span>
+</span><span>  (</span><span style="color:#282828;">let </span><span>[[min max char password </span><span style="color:#282828;">:as</span><span> parsed] (</span><span style="color:#282828;">parse-line</span><span> line)
+</span><span>        lcount (</span><span style="color:#282828;">get </span><span>(</span><span style="color:#282828;">frequencies</span><span> password) char </span><span style="color:#8f3f71;">0</span><span>)]
+</span><span>
+</span><span>    (</span><span style="color:#282828;">boolean
+</span><span>     (</span><span style="color:#282828;">and
+</span><span>      parsed
+</span><span>      (</span><span style="color:#282828;">&lt;=</span><span> lcount max)
+</span><span>      (</span><span style="color:#282828;">&gt;=</span><span> lcount min)))))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">part1 </span><span>[]
+</span><span>   (</span><span style="color:#282828;">count
+</span><span>    (</span><span style="color:#282828;">filter
+</span><span>     is-valid?
+</span><span>     (</span><span style="color:#282828;">line-seq </span><span>(</span><span style="color:#282828;">clojure.java.io/reader</span><span> input-file-path)))))
+</span></code></pre>
+<h2 id="part-two">Part Two</h2>
+<p>Most of the functions defined in part one were usable in part two as
+well. I didn't have to refactor everything like I had to yesterday.</p>
+<pre data-lang="clojure" style="background-color:#fcf0ca;color:#282828aa;" class="language-clojure "><code class="language-clojure" data-lang="clojure"><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">is-valid-two?
+</span><span>  [line]
+</span><span>  (</span><span style="color:#282828;">let </span><span>[[x y char password </span><span style="color:#282828;">:as</span><span> parsed] (</span><span style="color:#282828;">parse-line</span><span> line)
+</span><span>        password-arr (</span><span style="color:#282828;">char-array</span><span> password)
+</span><span>        x-exists (</span><span style="color:#282828;">= </span><span>(</span><span style="color:#282828;">get</span><span> password-arr (</span><span style="color:#282828;">-</span><span> x </span><span style="color:#8f3f71;">1</span><span>)) char)
+</span><span>        y-exists (</span><span style="color:#282828;">= </span><span>(</span><span style="color:#282828;">get</span><span> password-arr (</span><span style="color:#282828;">-</span><span> y </span><span style="color:#8f3f71;">1</span><span>)) char)]
+</span><span>    (</span><span style="color:#282828;">and </span><span>(</span><span style="color:#282828;">or</span><span> x-exists y-exists)
+</span><span>         (</span><span style="color:#282828;">not </span><span>(</span><span style="color:#282828;">and</span><span> x-exists y-exists)))))
+</span><span>
+</span><span>
+</span><span>(</span><span style="color:#9d0006;">defn </span><span style="color:#407959;">part2 </span><span>[]
+</span><span>  (</span><span style="color:#282828;">count
+</span><span>   (</span><span style="color:#282828;">filter
+</span><span>    is-valid-two?
+</span><span>    (</span><span style="color:#282828;">line-seq </span><span>(</span><span style="color:#282828;">clojure.java.io/reader</span><span> input-file-path)))))
+</span></code></pre>
+<p>There is a little bit of duplication between part1 and part2 but it's
+something that I can live with.</p>
+<h2 id="notes">Notes</h2>
+<p>I learned how to unpack (a.k.a. destructure in clojure land) a
+vector (or any sequence) in arguments or in a <code>let</code>.</p>
+<p>For challenge part2, I might be able to make it a little more elegant.
+But that's for the future.</p>
+<p>I also did some re-organization so that <code>lein run</code> command that runs
+the <code>main</code> method from <code>core</code> can be used to run solutions to all
+challenges.</p>
+<p>Using regex was fairly simple. My favorite regex101.com doesn
+explicitly have support for Clojure (or Java, for that matter) but
+JavaScript regex engine is very similar to the one in Java.</p>
+<p>The `slurp` function is amazing.</p>
+<h2 id="links">Links</h2>
+<ol>
+<li><a href="../static/advent-2020-input-day-two.txt">advent-2020-input-day-two.txt</a></li>
+<li>[Day 1]({{&lt; relref "advent-of-code-2020-day-one" &gt;}}) of the challenge</li>
+<li><a rel="noopener" target="_blank" href="https://github.com/poudel/advent-2020-clj">github</a> repo of the solution</li>
+</ol>
+
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://keshp.com/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://keshp.com/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://keshp.com/js.js" defer></script>
+
+</body>
+</html>
